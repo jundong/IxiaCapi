@@ -1,0 +1,204 @@
+07/20/2016 10:54:17 AM INFO: ----- TAG: body TestDevice::Ctor  ----- 
+07/20/2016 10:54:17 AM WARN: This is a warning, there occured some unexpected issues which may cause error. 
+ TestDevice instance is constructed without connect to device, please use "Connect" method to connect manually. 
+ body TestDevice::Ctor  
+
+07/20/2016 10:54:38 AM INFO: ----- TAG: body TestDevice::Connect  ----- 
+07/20/2016 10:54:38 AM INFO: Connect to host by IP address... 192.168.200.212 
+07/20/2016 10:54:38 AM INFO: Connect localhost ixNetwork Tcl Server  
+07/20/2016 10:54:39 AM INFO: Create a new Config 
+07/20/2016 10:54:40 AM INFO: chassis:::ixNet::OBJ-/availableHardware/chassis:L194 
+07/20/2016 10:54:40 AM INFO: 1 == 1 
+07/20/2016 10:54:40 AM INFO: Connection success... 
+ address:192.168.200.212 
+ chassis: ::ixNet::OBJ-/availableHardware/chassis:"192.168.200.212" 
+07/20/2016 10:55:36 AM INFO: ----- TAG: body TestDevice::CreateTestPort  ----- 
+07/20/2016 10:55:36 AM INFO: args: -loc 1/1 -name port1 -type ETH 
+07/20/2016 10:55:36 AM INFO: IxiaCapi::ETHPort port1 ::ixNet::OBJ-/availableHardware/chassis:"192.168.200.212" 1 1 
+07/20/2016 10:55:36 AM INFO: ----- TAG: body TestPort::ctor  ----- 
+07/20/2016 10:55:36 AM INFO: Real Port:::ixNet::OBJ-/availableHardware/chassis:"192.168.200.212"/card:1/port:1 
+07/20/2016 10:55:39 AM INFO: ----- TAG: body ETHPort::ctor  ----- 
+07/20/2016 10:55:39 AM INFO: port handle:::ixNet::OBJ-/vport:1	name:port1 
+07/20/2016 10:55:39 AM INFO: ----- TAG: body TestPortMgr::AddTestPort  ----- 
+07/20/2016 10:55:39 AM INFO: Port creation success... Ethernet 
+07/20/2016 10:55:46 AM INFO: ----- TAG: body TestDevice::CreateTestPort  ----- 
+07/20/2016 10:55:46 AM INFO: args: -loc 1/2 -name port2 -type ETH 
+07/20/2016 10:55:46 AM INFO: IxiaCapi::ETHPort port2 ::ixNet::OBJ-/availableHardware/chassis:"192.168.200.212" 1 2 
+07/20/2016 10:55:46 AM INFO: ----- TAG: body TestPort::ctor  ----- 
+07/20/2016 10:55:46 AM INFO: Real Port:::ixNet::OBJ-/availableHardware/chassis:"192.168.200.212"/card:1/port:2 
+07/20/2016 10:55:48 AM INFO: ----- TAG: body ETHPort::ctor  ----- 
+07/20/2016 10:55:48 AM INFO: port handle:::ixNet::OBJ-/vport:2	name:port2 
+07/20/2016 10:55:48 AM INFO: ----- TAG: body TestPortMgr::AddTestPort  ----- 
+07/20/2016 10:55:48 AM INFO: Port creation success... Ethernet 
+07/20/2016 11:07:04 AM INFO: ----- TAG: body TestPort::CreateRouter  ----- 
+07/20/2016 11:07:04 AM INFO: Args:-RouterName rtr2 -RouterType Dhcpv6Client -HostName Host1  
+07/20/2016 11:07:04 AM INFO: newlist: ::rtr2 
+07/20/2016 11:07:04 AM INFO: Step10 
+07/20/2016 11:07:04 AM INFO: Type arg: Dhcpv6Client 
+07/20/2016 11:07:04 AM INFO: Type: DHCPV6CLIENT 
+07/20/2016 11:07:04 AM INFO: newlist: ::Host1 
+07/20/2016 11:08:15 AM INFO: ----- TAG: body ETHPort::CreateAccessHost  ----- 
+07/20/2016 11:08:15 AM INFO: collect parameters... 
+07/20/2016 11:08:15 AM INFO: newlist: ::Host1 
+07/20/2016 11:08:15 AM INFO: HostLevel 2 
+07/20/2016 11:08:15 AM INFO: Args: -HostName Host1 -UpperLayer ipv6 { }  
+07/20/2016 11:08:15 AM INFO: ----- TAG: body TestPort::CreateAccessHost  ----- 
+07/20/2016 11:08:15 AM INFO: Args:-HostName Host1 -UpperLayer ipv6 { }  
+07/20/2016 11:08:15 AM INFO: newlist: ::Host1 
+07/20/2016 11:08:15 AM INFO: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: 
+07/20/2016 11:08:15 AM INFO: root:::ixNet::OBJ-/ 
+07/20/2016 11:08:15 AM INFO: command:IxiaCapi::Host ::Host1  
+07/20/2016 11:08:15 AM INFO: ----- TAG: body Host::Ctor  ----- 
+07/20/2016 11:08:15 AM INFO: command: ::Host1 Config -hPort ::ixNet::OBJ-/vport:1  -HostName Host1 -UpperLayer ipv6 { }  
+07/20/2016 11:08:15 AM INFO: ----- TAG: body Host::Config  ----- 
+07/20/2016 11:08:15 AM INFO: Args:-hPort ::ixNet::OBJ-/vport:1 -HostName Host1 -UpperLayer ipv6 
+07/20/2016 11:08:15 AM INFO: Key :-hport 	Value :::ixNet::OBJ-/vport:1 
+07/20/2016 11:08:15 AM INFO: Key :-hostname 	Value :Host1 
+07/20/2016 11:08:15 AM INFO: Key :-upperlayer 	Value :ipv6 
+07/20/2016 11:08:16 AM INFO: Host create success... ::Host1 
+07/20/2016 11:08:16 AM INFO: HostList ::Host1 
+07/20/2016 11:08:16 AM INFO: name: ::Host1	level: 1 
+07/20/2016 11:08:16 AM INFO: ::Host1 ::device1 ::IxiaCapi::PortManager ::IxiaCapi::TrafficManager ::IxiaCapi::TestDevice::port1 ::IxiaCapi::TestDevice::port2 
+07/20/2016 11:08:16 AM INFO: interface:::ixNet::OBJ-/vport:1/interface:1 
+07/20/2016 11:08:16 AM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:1/ethernet 
+07/20/2016 11:08:16 AM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:1/ethernet 
+07/20/2016 11:08:36 AM INFO: ----- TAG: body ETHPort::CreateAccessHost  ----- 
+07/20/2016 11:08:36 AM INFO: collect parameters... 
+07/20/2016 11:08:36 AM INFO: newlist: ::Host1 
+07/20/2016 11:08:36 AM INFO: HostLevel 2 
+07/20/2016 11:08:36 AM INFO: Args: -HostName Host1 -UpperLayer ipv6 -Ipv6Addr 2000::2 -Ipv6Mask 64 -Ipv6SutAddr 2000::1 -Ipv6LinkLocalAddr fe80::2 -MacAddr 00:00:01:00:00:02  
+07/20/2016 11:08:36 AM INFO: ----- TAG: body TestPort::CreateAccessHost  ----- 
+07/20/2016 11:08:36 AM INFO: Args:-HostName Host1 -UpperLayer ipv6 -Ipv6Addr 2000::2 -Ipv6Mask 64 -Ipv6SutAddr 2000::1 -Ipv6LinkLocalAddr fe80::2 -MacAddr 00:00:01:00:00:02  
+07/20/2016 11:08:36 AM INFO: newlist: ::Host1 
+07/20/2016 11:08:36 AM INFO: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:::Host1 
+07/20/2016 11:08:36 AM ERR: This is a serious error. 
+ The host to be created has been existed... ::Host1 
+ body TestPort::CreateAccessHost  
+
+07/20/2016 11:08:36 AM INFO: chain result: 4 
+07/20/2016 11:09:11 AM INFO: ----- TAG: body ETHPort::CreateAccessHost  ----- 
+07/20/2016 11:09:11 AM INFO: collect parameters... 
+07/20/2016 11:09:11 AM INFO: newlist: ::Host2 
+07/20/2016 11:09:11 AM INFO: HostLevel 2 
+07/20/2016 11:09:11 AM INFO: Args: -HostName Host2 -UpperLayer ipv6 -Ipv6Addr 2000::2 -Ipv6Mask 64 -Ipv6SutAddr 2000::1 -Ipv6LinkLocalAddr fe80::2 -MacAddr 00:00:01:00:00:02  
+07/20/2016 11:09:11 AM INFO: ----- TAG: body TestPort::CreateAccessHost  ----- 
+07/20/2016 11:09:11 AM INFO: Args:-HostName Host2 -UpperLayer ipv6 -Ipv6Addr 2000::2 -Ipv6Mask 64 -Ipv6SutAddr 2000::1 -Ipv6LinkLocalAddr fe80::2 -MacAddr 00:00:01:00:00:02  
+07/20/2016 11:09:11 AM INFO: newlist: ::Host2 
+07/20/2016 11:09:11 AM INFO: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:::Host1 
+07/20/2016 11:09:11 AM INFO: root:::ixNet::OBJ-/ 
+07/20/2016 11:09:11 AM INFO: command:IxiaCapi::Host ::Host2  
+07/20/2016 11:09:11 AM INFO: ----- TAG: body Host::Ctor  ----- 
+07/20/2016 11:09:11 AM INFO: command: ::Host2 Config -hPort ::ixNet::OBJ-/vport:1  -HostName Host2 -UpperLayer ipv6 -Ipv6Addr 2000::2 -Ipv6Mask 64 -Ipv6SutAddr 2000::1 -Ipv6LinkLocalAddr fe80::2 -MacAddr 00:00:01:00:00:02  
+07/20/2016 11:09:11 AM INFO: ----- TAG: body Host::Config  ----- 
+07/20/2016 11:09:11 AM INFO: Args:-hPort ::ixNet::OBJ-/vport:1 -HostName Host2 -UpperLayer ipv6 -Ipv6Addr 2000::2 -Ipv6Mask 64 -Ipv6SutAddr 2000::1 -Ipv6LinkLocalAddr fe80::2 -MacAddr 00:00:01:00:00:02 
+07/20/2016 11:09:11 AM INFO: Key :-hport 	Value :::ixNet::OBJ-/vport:1 
+07/20/2016 11:09:11 AM INFO: Key :-hostname 	Value :Host2 
+07/20/2016 11:09:11 AM INFO: Key :-upperlayer 	Value :ipv6 
+07/20/2016 11:09:11 AM INFO: Key :-ipv6addr 	Value :2000::2 
+07/20/2016 11:09:11 AM INFO: Key :-ipv6mask 	Value :64 
+07/20/2016 11:09:11 AM INFO: Key :-ipv6sutaddr 	Value :2000::1 
+07/20/2016 11:09:11 AM INFO: Key :-ipv6linklocaladdr 	Value :fe80::2 
+07/20/2016 11:09:11 AM INFO: Key :-macaddr 	Value :00:00:01:00:00:02 
+07/20/2016 11:09:11 AM INFO: 00:00:01:00:00:02 
+07/20/2016 11:09:11 AM INFO: Host create success... ::Host1 ::Host2 
+07/20/2016 11:09:11 AM INFO: HostList ::Host1 ::Host2 
+07/20/2016 11:09:11 AM INFO: name: ::Host2	level: 1 
+07/20/2016 11:09:11 AM INFO: ::Host1 ::Host2 ::device1 ::IxiaCapi::PortManager ::IxiaCapi::TrafficManager ::IxiaCapi::TestDevice::port1 ::IxiaCapi::TestDevice::port2 
+07/20/2016 11:09:11 AM INFO: interface:::ixNet::OBJ-/vport:1/interface:2 
+07/20/2016 11:09:11 AM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:2/ethernet 
+07/20/2016 11:09:11 AM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:2/ethernet 
+07/20/2016 11:10:35 AM INFO: ----- TAG: body TestPort::CreateRouter  ----- 
+07/20/2016 11:10:35 AM INFO: Args:-RouterName rtr2 -RouterType Dhcpv6Client -HostName Host2  
+07/20/2016 11:10:35 AM INFO: newlist: ::rtr2 
+07/20/2016 11:10:35 AM INFO: Step10 
+07/20/2016 11:10:35 AM INFO: Type arg: Dhcpv6Client 
+07/20/2016 11:10:35 AM INFO: Type: DHCPV6CLIENT 
+07/20/2016 11:10:35 AM INFO: newlist: ::Host2 
+07/20/2016 11:10:35 AM INFO: Check sub-interface flag...::IxiaCapi::TestDevice::port1 
+07/20/2016 11:10:35 AM INFO: ----- TAG: body DHCPClient::ctor  ----- 
+07/20/2016 11:10:35 AM INFO: ----- TAG: body DHCPv6Client::ctor  ----- 
+07/20/2016 11:10:35 AM INFO: ----- TAG: body ProtocolStackObject::ctor  ----- 
+07/20/2016 11:10:35 AM INFO: onStack:null 
+07/20/2016 11:10:35 AM INFO: ----- TAG: body Dhcpv6Host::reborn  ----- 
+07/20/2016 11:10:35 AM INFO: ----- TAG: body DhcpHost::reborn  ----- 
+07/20/2016 11:10:35 AM INFO: new dhcp endpoint 
+07/20/2016 11:10:35 AM INFO: ----- TAG: body ProtocolStackObject::reborn  ----- 
+07/20/2016 11:10:35 AM INFO: new ethernet stack 
+07/20/2016 11:10:37 AM INFO: option:::ixNet::OBJ-/globals/protocolStack/dhcpGlobals:1/dhcpOptionSet:"01e0aeb5-3877-4f99-b2f6-3b4b0b880500" 
+07/20/2016 11:10:37 AM INFO: ::ixNet::OBJ-/globals/protocolStack/dhcpGlobals:1/dhcpOptionSet:"530b3b73-f25f-4e35-85f7-b8758de7b34b" 
+07/20/2016 11:10:37 AM INFO: ixNet setA ::ixNet::OBJ-/vport:1/protocolStack/ethernet:"bbc0f129-c813-40fb-a5ec-0480a023f6d3"/dhcpEndpoint:"cf280918-b423-4bd9-9446-7a646a0ce147"/range:"667856df-dcac-4e2e-b673-b17ca35322f3"/dhcpRange -clientOptionSet ::ixNet::OBJ-/globals/protocolStack/dhcpGlobals:1/dhcpOptionSet:"01e0aeb5-3877-4f99-b2f6-3b4b0b880500" 
+07/20/2016 11:10:37 AM INFO: -----------hostinfo : -hPort ::ixNet::OBJ-/vport:1 -HostName Host2 -UpperLayer ipv6 -Ipv6Addr 2000::2 -Ipv6Mask 64 -Ipv6SutAddr 2000::1 -Ipv6LinkLocalAddr fe80::2 -MacAddr 00:00:01:00:00:02 
+07/20/2016 11:10:37 AM INFO: ----- TAG: body DHCPv6Client::ConfigRouter  ----- 
+07/20/2016 11:10:37 AM INFO: ----- TAG: body Dhcpv6Host::config  ----- 
+07/20/2016 11:10:37 AM INFO: ----- TAG: body DhcpHost::config  ----- 
+07/20/2016 11:10:37 AM INFO: ----- TAG: body ProtocolStackObject::config  ----- 
+07/20/2016 11:10:37 AM INFO: vlan id info cnt:2 
+07/20/2016 11:10:37 AM INFO: The ixNetwork version is: 7.50.1009.20 
+07/20/2016 11:10:37 AM INFO: The ixNetwork version is: 7.50.1009.20 
+07/20/2016 11:10:37 AM INFO: Args:  
+07/20/2016 11:10:37 AM INFO: Args:  
+07/20/2016 11:10:37 AM INFO: Router create success... ::rtr2 
+07/20/2016 11:10:53 AM INFO: ----- TAG: body DHCPv6Client::ConfigRouter  ----- 
+07/20/2016 11:10:53 AM INFO: -vlanid1 
+07/20/2016 11:10:53 AM INFO: -vlan_id 
+07/20/2016 11:10:53 AM INFO: 10 
+07/20/2016 11:10:53 AM INFO: ----- TAG: body Dhcpv6Host::config  ----- 
+07/20/2016 11:10:53 AM INFO: ----- TAG: body DhcpHost::config  ----- 
+07/20/2016 11:10:53 AM INFO: ----- TAG: body ProtocolStackObject::config  ----- 
+07/20/2016 11:10:54 AM INFO: vlan id info cnt:2 
+07/20/2016 11:10:54 AM INFO: The ixNetwork version is: 7.50.1009.20 
+07/20/2016 11:10:54 AM INFO: The ixNetwork version is: 7.50.1009.20 
+07/20/2016 11:10:54 AM INFO: Args:-vlan_id 10  
+07/20/2016 11:10:54 AM INFO: Args:-vlan_id 10  
+07/20/2016 11:23:19 AM INFO: ----- TAG: body TestPort::CreateRouter  ----- 
+07/20/2016 11:23:19 AM INFO: Args:-RouterName rtr3 -RouterType Dhcpv4Client  
+07/20/2016 11:23:19 AM INFO: newlist: ::rtr3 
+07/20/2016 11:23:19 AM INFO: Step10 
+07/20/2016 11:23:19 AM INFO: Type arg: Dhcpv4Client 
+07/20/2016 11:23:19 AM INFO: Type: DHCPV4CLIENT 
+07/20/2016 11:23:19 AM INFO: ----- TAG: body ETHPort::CreateAccessHost  ----- 
+07/20/2016 11:23:19 AM INFO: collect parameters... 
+07/20/2016 11:23:19 AM INFO: newlist: ::::IxiaCapi::TestDevice::port1_rtr3_host 
+07/20/2016 11:23:19 AM INFO: HostLevel 2 
+07/20/2016 11:23:19 AM INFO: Args: -name ::IxiaCapi::TestDevice::port1_rtr3_host  
+07/20/2016 11:23:19 AM INFO: ----- TAG: body TestPort::CreateAccessHost  ----- 
+07/20/2016 11:23:19 AM INFO: Args:-name ::IxiaCapi::TestDevice::port1_rtr3_host  
+07/20/2016 11:23:19 AM INFO: newlist: ::::IxiaCapi::TestDevice::port1_rtr3_host 
+07/20/2016 11:23:19 AM INFO: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa:::Host1 ::Host2 
+07/20/2016 11:23:19 AM INFO: root:::ixNet::OBJ-/ 
+07/20/2016 11:23:19 AM INFO: command:IxiaCapi::Host ::::IxiaCapi::TestDevice::port1_rtr3_host  
+07/20/2016 11:23:19 AM INFO: ----- TAG: body Host::Ctor  ----- 
+07/20/2016 11:23:19 AM INFO: command: ::::IxiaCapi::TestDevice::port1_rtr3_host Config -hPort ::ixNet::OBJ-/vport:1  -name ::IxiaCapi::TestDevice::port1_rtr3_host  
+07/20/2016 11:23:19 AM INFO: ----- TAG: body Host::Config  ----- 
+07/20/2016 11:23:19 AM INFO: Args:-hPort ::ixNet::OBJ-/vport:1 -name ::IxiaCapi::TestDevice::port1_rtr3_host 
+07/20/2016 11:23:19 AM INFO: Key :-hport 	Value :::ixNet::OBJ-/vport:1 
+07/20/2016 11:23:19 AM INFO: Key :-name 	Value :::IxiaCapi::TestDevice::port1_rtr3_host 
+07/20/2016 11:23:19 AM INFO: Host create success... ::Host1 ::Host2 ::::IxiaCapi::TestDevice::port1_rtr3_host 
+07/20/2016 11:23:20 AM INFO: HostList ::Host1 ::Host2 ::::IxiaCapi::TestDevice::port1_rtr3_host 
+07/20/2016 11:23:20 AM INFO: name: ::::IxiaCapi::TestDevice::port1_rtr3_host	level: 1 
+07/20/2016 11:23:20 AM INFO: ::Host1 ::Host2 ::device1 ::IxiaCapi::PortManager ::rtr2_c ::rtr2 ::IxiaCapi::TrafficManager ::IxiaCapi::TestDevice::port1_rtr3_host ::IxiaCapi::TestDevice::port1 ::IxiaCapi::TestDevice::port2 
+07/20/2016 11:23:20 AM INFO: interface:::ixNet::OBJ-/vport:1/interface:3 
+07/20/2016 11:23:20 AM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:3/ethernet 
+07/20/2016 11:23:20 AM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:3/ethernet 
+07/20/2016 11:23:20 AM INFO: Check sub-interface flag...::IxiaCapi::TestDevice::port1 
+07/20/2016 11:23:20 AM INFO: ----- TAG: body DHCPClient::ctor  ----- 
+07/20/2016 11:23:20 AM INFO: ----- TAG: body DHCPv4Client::ctor  ----- 
+07/20/2016 11:23:20 AM INFO: ----- TAG: body ProtocolStackObject::ctor  ----- 
+07/20/2016 11:23:20 AM INFO: onStack:null 
+07/20/2016 11:23:20 AM INFO: ----- TAG: body Dhcpv4Host::reborn  ----- 
+07/20/2016 11:23:20 AM INFO: ----- TAG: body DhcpHost::reborn  ----- 
+07/20/2016 11:23:20 AM INFO: new dhcp endpoint 
+07/20/2016 11:23:20 AM INFO: ----- TAG: body ProtocolStackObject::reborn  ----- 
+07/20/2016 11:23:20 AM INFO: new ethernet stack 
+07/20/2016 11:23:20 AM INFO: option:::ixNet::OBJ-/globals/protocolStack/dhcpGlobals:1/dhcpOptionSet:"605794f1-56b3-4e49-b6a5-cd93298a3004" 
+07/20/2016 11:23:20 AM INFO: ::ixNet::OBJ-/globals/protocolStack/dhcpGlobals:1/dhcpOptionSet:"530b3b73-f25f-4e35-85f7-b8758de7b34b" 
+07/20/2016 11:23:20 AM INFO: ixNet setA ::ixNet::OBJ-/vport:1/protocolStack/ethernet:"69573a31-d719-47fe-b319-ec519e9dfa2b"/dhcpEndpoint:"855f3a2d-00e7-4edf-8316-a5b8b632d070"/range:"efab4a32-7f9f-4a96-b986-29780e90dc8e"/dhcpRange -clientOptionSet ::ixNet::OBJ-/globals/protocolStack/dhcpGlobals:1/dhcpOptionSet:"605794f1-56b3-4e49-b6a5-cd93298a3004" 
+07/20/2016 11:23:20 AM INFO: -----------hostinfo : -hPort ::ixNet::OBJ-/vport:1 -name ::IxiaCapi::TestDevice::port1_rtr3_host 
+07/20/2016 11:23:20 AM INFO: ----- TAG: body DHCPv6Client::ConfigRouter  ----- 
+07/20/2016 11:23:20 AM INFO: ----- TAG: body DhcpHost::config  ----- 
+07/20/2016 11:23:20 AM INFO: ----- TAG: body ProtocolStackObject::config  ----- 
+07/20/2016 11:23:20 AM INFO: vlan id info cnt:2 
+07/20/2016 11:23:20 AM INFO: The ixNetwork version is: 7.50.1009.20 
+07/20/2016 11:23:20 AM INFO: The ixNetwork version is: 7.50.1009.20 
+07/20/2016 11:23:20 AM INFO: Args:  
+07/20/2016 11:23:20 AM INFO: Router create success... ::rtr2 ::rtr3 
