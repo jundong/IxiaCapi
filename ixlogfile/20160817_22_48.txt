@@ -1,0 +1,371 @@
+08/17/2016 10:49:02 PM INFO: ----- TAG: body TestDevice::Ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:49:02 PM WARN: This is a warning, there occured some unexpected issues which may cause error. 
+ TestDevice instance is constructed without connect to device, please use "Connect" method to connect manually. 
+ body TestDevice::Ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl 
+
+08/17/2016 10:49:02 PM INFO: ----- TAG: body TestDevice::Connect C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:49:02 PM INFO: Connect to host by IP address... 172.16.174.134 
+08/17/2016 10:49:03 PM INFO: Connect localhost ixNetwork Tcl Server  
+08/17/2016 10:49:03 PM INFO: Create a new Config 
+08/17/2016 10:49:05 PM INFO: chassis:::ixNet::OBJ-/availableHardware/chassis:L1 
+08/17/2016 10:49:05 PM INFO: 1 == 1 
+08/17/2016 10:49:06 PM INFO: Connection success... 
+ address:172.16.174.134 
+ chassis: ::ixNet::OBJ-/availableHardware/chassis:"172.16.174.134" 
+08/17/2016 10:49:06 PM INFO: ----- TAG: body TestDevice::CreateTestPort C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:49:06 PM INFO: args: -loc 1/1 -name port1 -type ETH 
+08/17/2016 10:49:06 PM INFO: IxiaCapi::ETHPort port1 ::ixNet::OBJ-/availableHardware/chassis:"172.16.174.134" 1 1 
+08/17/2016 10:49:06 PM INFO: ----- TAG: body TestPort::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:49:09 PM INFO: Real Port:::ixNet::OBJ-/availableHardware/chassis:"172.16.174.134"/card:1/port:1 
+08/17/2016 10:49:55 PM INFO: ----- TAG: body ETHPort::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:49:55 PM INFO: port handle:::ixNet::OBJ-/vport:1	name:port1 
+08/17/2016 10:49:55 PM INFO: ----- TAG: body TestPortMgr::AddTestPort C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:49:55 PM INFO: Port creation success... Ethernet 
+08/17/2016 10:49:55 PM INFO: ----- TAG: body TestDevice::CreateTestPort C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:49:55 PM INFO: args: -loc 3/1 -name port2 -type ETH 
+08/17/2016 10:49:55 PM INFO: IxiaCapi::ETHPort port2 ::ixNet::OBJ-/availableHardware/chassis:"172.16.174.134" 3 1 
+08/17/2016 10:49:55 PM INFO: ----- TAG: body TestPort::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:49:56 PM INFO: Real Port:::ixNet::OBJ-/availableHardware/chassis:"172.16.174.134"/card:3/port:1 
+08/17/2016 10:50:40 PM INFO: ----- TAG: body ETHPort::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:40 PM INFO: port handle:::ixNet::OBJ-/vport:2	name:port2 
+08/17/2016 10:50:40 PM INFO: ----- TAG: body TestPortMgr::AddTestPort C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:40 PM INFO: Port creation success... Ethernet 
+08/17/2016 10:50:40 PM INFO: ----- TAG: body ETHPort::CreateHost C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:40 PM INFO: ----- TAG: body ETHPort::CreateAccessHost C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:40 PM INFO: collect parameters... 
+08/17/2016 10:50:40 PM INFO: newlist: ::hostname2 
+08/17/2016 10:50:40 PM INFO: HostLevel 2 
+08/17/2016 10:50:40 PM INFO: Args: -HostName hostname2 -Ipv6Addr 2002:db8:0101:0100::1 -Ipv6Mask 64 -Ipv6SutAddr 2002:db8:0101:0100::2 -MacAddr 00:20:15:01:10:02 -FlagPing enable  
+08/17/2016 10:50:40 PM INFO: ----- TAG: body TestPort::CreateAccessHost C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:40 PM INFO: Args:-HostName hostname2 -Ipv6Addr 2002:db8:0101:0100::1 -Ipv6Mask 64 -Ipv6SutAddr 2002:db8:0101:0100::2 -MacAddr 00:20:15:01:10:02 -FlagPing enable  
+08/17/2016 10:50:40 PM INFO: newlist: ::hostname2 
+08/17/2016 10:50:40 PM INFO: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: 
+08/17/2016 10:50:40 PM INFO: root:::ixNet::OBJ-/ 
+08/17/2016 10:50:40 PM INFO: command:IxiaCapi::Host ::hostname2  
+08/17/2016 10:50:40 PM INFO: ----- TAG: body Host::Ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:40 PM INFO: command: ::hostname2 Config -hPort ::ixNet::OBJ-/vport:2  -HostName hostname2 -Ipv6Addr 2002:db8:0101:0100::1 -Ipv6Mask 64 -Ipv6SutAddr 2002:db8:0101:0100::2 -MacAddr 00:20:15:01:10:02 -FlagPing enable  
+08/17/2016 10:50:40 PM INFO: ----- TAG: body Host::Config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:40 PM INFO: Args:-hPort ::ixNet::OBJ-/vport:2 -HostName hostname2 -Ipv6Addr 2002:db8:0101:0100::1 -Ipv6Mask 64 -Ipv6SutAddr 2002:db8:0101:0100::2 -MacAddr 00:20:15:01:10:02 -FlagPing enable 
+08/17/2016 10:50:40 PM INFO: Key :-hport 	Value :::ixNet::OBJ-/vport:2 
+08/17/2016 10:50:40 PM INFO: Key :-hostname 	Value :hostname2 
+08/17/2016 10:50:40 PM INFO: Key :-ipv6addr 	Value :2002:db8:0101:0100::1 
+08/17/2016 10:50:40 PM INFO: Key :-ipv6mask 	Value :64 
+08/17/2016 10:50:40 PM INFO: Key :-ipv6sutaddr 	Value :2002:db8:0101:0100::2 
+08/17/2016 10:50:40 PM INFO: Key :-macaddr 	Value :00:20:15:01:10:02 
+08/17/2016 10:50:40 PM INFO: Key :-flagping 	Value :enable 
+08/17/2016 10:50:40 PM INFO: 00:20:15:01:10:02 
+08/17/2016 10:50:41 PM INFO: Host create success... ::hostname2 
+08/17/2016 10:50:41 PM INFO: HostList ::hostname2 
+08/17/2016 10:50:41 PM INFO: name: ::hostname2	level: 1 
+08/17/2016 10:50:41 PM INFO: ::device1 ::IxiaCapi::PortManager ::hostname2 ::IxiaCapi::TrafficManager ::IxiaCapi::TestDevice::port1 ::IxiaCapi::TestDevice::port2 
+08/17/2016 10:50:41 PM INFO: interface:::ixNet::OBJ-/vport:2/interface:1 
+08/17/2016 10:50:41 PM INFO: ethernet interface: ::ixNet::OBJ-/vport:2/interface:1/ethernet 
+08/17/2016 10:50:41 PM INFO: ethernet interface: ::ixNet::OBJ-/vport:2/interface:1/ethernet 
+08/17/2016 10:50:41 PM INFO: ----- TAG: body ETHPort::CreateSubInt C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:41 PM INFO: newlist: ::port1Vlan1 
+08/17/2016 10:50:41 PM INFO: ----- TAG: body TestPort::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:41 PM INFO: ----- TAG: body ETHPort::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:41 PM INFO: ----- TAG: body VlanSubInt::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:41 PM INFO: ----- TAG: body VlanSubInt::ConfigPort C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:41 PM INFO: Vlan sub interface created success... 
+08/17/2016 10:50:41 PM INFO: ----- TAG: body VlanSubInt::ConfigPort C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:41 PM INFO: ----- TAG: body VlanSubInt::CreateAccessHost C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:41 PM INFO: newlist: ::port1Host 
+08/17/2016 10:50:41 PM INFO: Step10 
+08/17/2016 10:50:41 PM INFO: ----- TAG: body ETHPort::CreateAccessHost C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:41 PM INFO: collect parameters... 
+08/17/2016 10:50:41 PM INFO: newlist: ::port1Host 
+08/17/2016 10:50:41 PM INFO: HostLevel 3 
+08/17/2016 10:50:41 PM INFO: Args: -HostName port1Host -Ipv4Addr 66.0.0.2 -Ipv4Mask 24 -Ipv4SutAddr 66.0.0.1 -MacAddr 00-00-00-00-00-66 -FlagPing enable  
+08/17/2016 10:50:41 PM INFO: ----- TAG: body TestPort::CreateAccessHost C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:41 PM INFO: Args:-HostName port1Host -Ipv4Addr 66.0.0.2 -Ipv4Mask 24 -Ipv4SutAddr 66.0.0.1 -MacAddr 00-00-00-00-00-66 -FlagPing enable  
+08/17/2016 10:50:41 PM INFO: newlist: ::port1Host 
+08/17/2016 10:50:41 PM INFO: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: 
+08/17/2016 10:50:41 PM INFO: root:::ixNet::OBJ-/ 
+08/17/2016 10:50:42 PM INFO: command:IxiaCapi::Host ::port1Host  
+08/17/2016 10:50:42 PM INFO: ----- TAG: body Host::Ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:42 PM INFO: command: ::port1Host Config -hPort ::ixNet::OBJ-/vport:1  -HostName port1Host -Ipv4Addr 66.0.0.2 -Ipv4Mask 24 -Ipv4SutAddr 66.0.0.1 -MacAddr 00-00-00-00-00-66 -FlagPing enable  
+08/17/2016 10:50:42 PM INFO: ----- TAG: body Host::Config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:42 PM INFO: Args:-hPort ::ixNet::OBJ-/vport:1 -HostName port1Host -Ipv4Addr 66.0.0.2 -Ipv4Mask 24 -Ipv4SutAddr 66.0.0.1 -MacAddr 00-00-00-00-00-66 -FlagPing enable 
+08/17/2016 10:50:42 PM INFO: Key :-hport 	Value :::ixNet::OBJ-/vport:1 
+08/17/2016 10:50:42 PM INFO: Key :-hostname 	Value :port1Host 
+08/17/2016 10:50:42 PM INFO: Key :-ipv4addr 	Value :66.0.0.2 
+08/17/2016 10:50:42 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:50:42 PM INFO: Is Ipv4 address... 
+08/17/2016 10:50:42 PM INFO: Key :-ipv4mask 	Value :24 
+08/17/2016 10:50:42 PM INFO: Key :-ipv4sutaddr 	Value :66.0.0.1 
+08/17/2016 10:50:42 PM INFO: SUT list: 66.0.0.1 
+08/17/2016 10:50:42 PM INFO: SUT: 66.0.0.1 
+08/17/2016 10:50:42 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:50:42 PM INFO: Is Ipv4 address... 
+08/17/2016 10:50:42 PM INFO: Key :-macaddr 	Value :00-00-00-00-00-66 
+08/17/2016 10:50:42 PM INFO: Key :-flagping 	Value :enable 
+08/17/2016 10:50:42 PM INFO: 00:00:00:00:00:66 
+08/17/2016 10:50:43 PM INFO: Host create success... ::port1Host 
+08/17/2016 10:50:43 PM INFO: HostList ::port1Host 
+08/17/2016 10:50:43 PM INFO: name: ::port1Host	level: 1 
+08/17/2016 10:50:43 PM INFO: ::device1 ::IxiaCapi::PortManager ::port1Host ::hostname2 ::port1Vlan1 ::IxiaCapi::TrafficManager ::IxiaCapi::TestDevice::port1 ::IxiaCapi::TestDevice::port2 
+08/17/2016 10:50:43 PM INFO: interface:::ixNet::OBJ-/vport:1/interface:1 
+08/17/2016 10:50:43 PM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:1/ethernet 
+08/17/2016 10:50:43 PM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:1/ethernet 
+08/17/2016 10:50:43 PM INFO: Step20 
+08/17/2016 10:50:43 PM INFO: Step30 
+08/17/2016 10:50:43 PM INFO: ::device1 ::IxiaCapi::PortManager ::port1Host ::hostname2 ::port1Vlan1 ::IxiaCapi::TrafficManager ::IxiaCapi::TestDevice::port1 ::IxiaCapi::TestDevice::port2 
+08/17/2016 10:50:43 PM INFO: Step50 
+08/17/2016 10:50:43 PM INFO: Step70 
+08/17/2016 10:50:43 PM INFO: ----- TAG: body ETHPort::StartArp C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:43 PM INFO: start all arp 
+08/17/2016 10:50:45 PM INFO: ----- TAG: body ETHPort::CreateAccessHost C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:45 PM INFO: collect parameters... 
+08/17/2016 10:50:45 PM INFO: newlist: ::hostname1 
+08/17/2016 10:50:45 PM INFO: HostLevel 2 
+08/17/2016 10:50:45 PM INFO: Args: -HostName hostname1 -Ipv4Addr 88.0.0.2 -Ipv4Mask 24 -Ipv4SutAddr 88.0.0.1 -MacAddr 00-00-00-00-00-88 -FlagPing enable  
+08/17/2016 10:50:45 PM INFO: ----- TAG: body TestPort::CreateAccessHost C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:45 PM INFO: Args:-HostName hostname1 -Ipv4Addr 88.0.0.2 -Ipv4Mask 24 -Ipv4SutAddr 88.0.0.1 -MacAddr 00-00-00-00-00-88 -FlagPing enable  
+08/17/2016 10:50:46 PM INFO: newlist: ::hostname1 
+08/17/2016 10:50:46 PM INFO: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa: 
+08/17/2016 10:50:46 PM INFO: root:::ixNet::OBJ-/ 
+08/17/2016 10:50:46 PM INFO: command:IxiaCapi::Host ::hostname1  
+08/17/2016 10:50:46 PM INFO: ----- TAG: body Host::Ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:46 PM INFO: command: ::hostname1 Config -hPort ::ixNet::OBJ-/vport:1  -HostName hostname1 -Ipv4Addr 88.0.0.2 -Ipv4Mask 24 -Ipv4SutAddr 88.0.0.1 -MacAddr 00-00-00-00-00-88 -FlagPing enable  
+08/17/2016 10:50:46 PM INFO: ----- TAG: body Host::Config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:46 PM INFO: Args:-hPort ::ixNet::OBJ-/vport:1 -HostName hostname1 -Ipv4Addr 88.0.0.2 -Ipv4Mask 24 -Ipv4SutAddr 88.0.0.1 -MacAddr 00-00-00-00-00-88 -FlagPing enable 
+08/17/2016 10:50:46 PM INFO: Key :-hport 	Value :::ixNet::OBJ-/vport:1 
+08/17/2016 10:50:46 PM INFO: Key :-hostname 	Value :hostname1 
+08/17/2016 10:50:46 PM INFO: Key :-ipv4addr 	Value :88.0.0.2 
+08/17/2016 10:50:46 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:50:46 PM INFO: Is Ipv4 address... 
+08/17/2016 10:50:46 PM INFO: Key :-ipv4mask 	Value :24 
+08/17/2016 10:50:46 PM INFO: Key :-ipv4sutaddr 	Value :88.0.0.1 
+08/17/2016 10:50:46 PM INFO: SUT list: 88.0.0.1 
+08/17/2016 10:50:46 PM INFO: SUT: 88.0.0.1 
+08/17/2016 10:50:46 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:50:46 PM INFO: Is Ipv4 address... 
+08/17/2016 10:50:46 PM INFO: Key :-macaddr 	Value :00-00-00-00-00-88 
+08/17/2016 10:50:46 PM INFO: Key :-flagping 	Value :enable 
+08/17/2016 10:50:46 PM INFO: 00:00:00:00:00:88 
+08/17/2016 10:50:47 PM INFO: Host create success... ::hostname1 
+08/17/2016 10:50:47 PM INFO: HostList ::hostname1 
+08/17/2016 10:50:47 PM INFO: name: ::hostname1	level: 1 
+08/17/2016 10:50:47 PM INFO: ::device1 ::IxiaCapi::PortManager ::port1Host ::hostname1 ::hostname2 ::port1Vlan1 ::IxiaCapi::TrafficManager ::IxiaCapi::TestDevice::port1 ::IxiaCapi::TestDevice::port2 
+08/17/2016 10:50:47 PM INFO: interface:::ixNet::OBJ-/vport:1/interface:2 
+08/17/2016 10:50:47 PM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:2/ethernet 
+08/17/2016 10:50:47 PM INFO: ethernet interface: ::ixNet::OBJ-/vport:1/interface:2/ethernet 
+08/17/2016 10:50:47 PM INFO: ----- TAG: body TestPort::CreateRouter C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:47 PM INFO: Args:-RouterName bgpRouter1 -RouterType BgpV4Router -routerid 88.0.0.2  
+08/17/2016 10:50:47 PM INFO: newlist: ::bgpRouter1 
+08/17/2016 10:50:47 PM INFO: Step10 
+08/17/2016 10:50:47 PM INFO: Type arg: BgpV4Router 
+08/17/2016 10:50:47 PM INFO: Type: BGPV4ROUTER 
+08/17/2016 10:50:47 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:50:47 PM INFO: Is Ipv4 address... 
+08/17/2016 10:50:47 PM INFO: routerId: 88.0.0.2 
+08/17/2016 10:50:47 PM INFO: Check sub-interface flag...::IxiaCapi::TestDevice::port1 
+08/17/2016 10:50:47 PM INFO: ----- TAG: body BgpRouter::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:47 PM INFO: ----- TAG: body BgpV4Router::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:47 PM INFO: ----- TAG: body BgpSession::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:47 PM INFO: portObj: ::IxiaCapi::TestDevice::port1 
+08/17/2016 10:50:47 PM INFO: RouterId:88.0.0.2 
+08/17/2016 10:50:47 PM INFO: OSPF/ISIS/BGP/RIP/PIM 
+08/17/2016 10:50:47 PM INFO: ----- TAG: body BgpRouter::ConfigRouter C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:47 PM INFO: -routerid 
+08/17/2016 10:50:47 PM INFO: -router_id 
+08/17/2016 10:50:47 PM INFO: 88.0.0.2 
+08/17/2016 10:50:47 PM INFO: -active 
+08/17/2016 10:50:47 PM INFO: -active 
+08/17/2016 10:50:47 PM INFO: enable 
+08/17/2016 10:50:47 PM INFO: ----- TAG: body BgpSession::config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:47 PM INFO: Args:-router_id 88.0.0.2 -active enable  
+08/17/2016 10:50:47 PM INFO: ----- TAG: body BgpSession::reborn C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:48 PM INFO: Router create success... ::bgpRouter1 
+08/17/2016 10:50:48 PM INFO: ----- TAG: body BgpRouter::ConfigRouter C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:48 PM INFO: -peertype 
+08/17/2016 10:50:48 PM INFO: -type 
+08/17/2016 10:50:48 PM INFO: EBGP 
+08/17/2016 10:50:48 PM INFO: -testerip 
+08/17/2016 10:50:48 PM INFO: -ipv4_addr 
+08/17/2016 10:50:48 PM INFO: 88.0.0.2 
+08/17/2016 10:50:48 PM INFO: -prefixlen 
+08/17/2016 10:50:48 PM INFO: -prefix_len 
+08/17/2016 10:50:48 PM INFO: 24 
+08/17/2016 10:50:48 PM INFO: -testeras 
+08/17/2016 10:50:48 PM INFO: -as 
+08/17/2016 10:50:48 PM INFO: 89 
+08/17/2016 10:50:48 PM INFO: -sutip 
+08/17/2016 10:50:48 PM INFO: -dut_ip 
+08/17/2016 10:50:48 PM INFO: 88.0.0.1 
+08/17/2016 10:50:48 PM INFO: -sutas 
+08/17/2016 10:50:48 PM INFO: -dut_as 
+08/17/2016 10:50:48 PM INFO: 88 
+08/17/2016 10:50:48 PM INFO: ----- TAG: body BgpSession::config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:48 PM INFO: Args:-type EBGP -ipv4_addr 88.0.0.2 -prefix_len 24 -as 89 -dut_ip 88.0.0.1 -dut_as 88  
+08/17/2016 10:50:48 PM INFO: ipv4: ::ixNet::OBJ-/vport:1/interface:2/ipv4 
+08/17/2016 10:50:48 PM INFO: interface:::ixNet::OBJ-/vport:1/interface:2 
+08/17/2016 10:50:49 PM INFO: dut_ip:88.0.0.1 
+08/17/2016 10:50:49 PM INFO: ----- TAG: body BgpRouter::CreateRouteBlock C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:49 PM INFO: newlist: ::block1 
+08/17/2016 10:50:49 PM INFO: -addressfamily 
+08/17/2016 10:50:49 PM INFO: -address_family 
+08/17/2016 10:50:49 PM INFO: ipv4 
+08/17/2016 10:50:49 PM INFO: -firstroute 
+08/17/2016 10:50:49 PM INFO: -start 
+08/17/2016 10:50:49 PM INFO: 55.0.0.0 
+08/17/2016 10:50:49 PM INFO: -prefixlen 
+08/17/2016 10:50:49 PM INFO: -prefix_len 
+08/17/2016 10:50:49 PM INFO: 24 
+08/17/2016 10:50:49 PM INFO: -routenum 
+08/17/2016 10:50:49 PM INFO: -num 
+08/17/2016 10:50:49 PM INFO: 10 
+08/17/2016 10:50:49 PM INFO: -origin 
+08/17/2016 10:50:49 PM INFO: -origin 
+08/17/2016 10:50:49 PM INFO: EGP 
+08/17/2016 10:50:49 PM INFO: -nexthop 
+08/17/2016 10:50:49 PM INFO: -nexthop 
+08/17/2016 10:50:49 PM INFO: 88.0.0.2 
+08/17/2016 10:50:49 PM INFO: -active 
+08/17/2016 10:50:49 PM INFO: -active 
+08/17/2016 10:50:49 PM INFO: enable 
+08/17/2016 10:50:49 PM INFO: -med 
+08/17/2016 10:50:49 PM INFO: -med 
+08/17/2016 10:50:49 PM INFO: 1 
+08/17/2016 10:50:49 PM INFO: -as_path 
+08/17/2016 10:50:50 PM INFO: -as_path 
+08/17/2016 10:50:50 PM INFO: {2 89} 
+08/17/2016 10:50:50 PM INFO: ----- TAG: body RouteBlock::config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:50 PM INFO: Args:-address_family ipv4 -start 55.0.0.0 -prefix_len 24 -num 10 -origin EGP -nexthop 88.0.0.2 -active enable -med 1 -as_path {{2 89}}  
+08/17/2016 10:50:50 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:50:50 PM INFO: Is Ipv4 address... 
+08/17/2016 10:50:50 PM INFO: ----- TAG: body BgpSession::set_route C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:50 PM INFO: Args:-route_block ::block1  
+08/17/2016 10:50:50 PM INFO: ----- TAG: body EmulationObject::enable C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:50 PM INFO: ----- TAG: body TestPort::CreateRouter C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:50 PM INFO: Args:-RouterName bgpRouter2 -RouterType BgpV4Router -routerid 88.0.0.2  
+08/17/2016 10:50:50 PM INFO: newlist: ::bgpRouter2 
+08/17/2016 10:50:50 PM INFO: Step10 
+08/17/2016 10:50:50 PM INFO: Type arg: BgpV4Router 
+08/17/2016 10:50:50 PM INFO: Type: BGPV4ROUTER 
+08/17/2016 10:50:50 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:50:51 PM INFO: Is Ipv4 address... 
+08/17/2016 10:50:51 PM INFO: routerId: 88.0.0.2 
+08/17/2016 10:50:51 PM INFO: Check sub-interface flag...::IxiaCapi::TestDevice::port2 
+08/17/2016 10:50:51 PM INFO: ----- TAG: body BgpRouter::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:51 PM INFO: ----- TAG: body BgpV4Router::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:51 PM INFO: ----- TAG: body BgpSession::ctor C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:51 PM INFO: portObj: ::IxiaCapi::TestDevice::port2 
+08/17/2016 10:50:51 PM INFO: RouterId:88.0.0.2 
+08/17/2016 10:50:51 PM INFO: OSPF/ISIS/BGP/RIP/PIM 
+08/17/2016 10:50:51 PM INFO: ----- TAG: body BgpRouter::ConfigRouter C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:51 PM INFO: -routerid 
+08/17/2016 10:50:51 PM INFO: -router_id 
+08/17/2016 10:50:51 PM INFO: 88.0.0.2 
+08/17/2016 10:50:51 PM INFO: -active 
+08/17/2016 10:50:51 PM INFO: -active 
+08/17/2016 10:50:51 PM INFO: enable 
+08/17/2016 10:50:51 PM INFO: ----- TAG: body BgpSession::config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:51 PM INFO: Args:-router_id 88.0.0.2 -active enable  
+08/17/2016 10:50:51 PM INFO: ----- TAG: body BgpSession::reborn C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:52 PM INFO: Router create success... ::bgpRouter2 
+08/17/2016 10:50:52 PM INFO: ----- TAG: body BgpRouter::ConfigRouter C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:52 PM INFO: -peertype 
+08/17/2016 10:50:52 PM INFO: -type 
+08/17/2016 10:50:52 PM INFO: IBGP 
+08/17/2016 10:50:52 PM INFO: -testerip 
+08/17/2016 10:50:52 PM INFO: -ipv4_addr 
+08/17/2016 10:50:52 PM INFO: 88.0.0.2 
+08/17/2016 10:50:52 PM INFO: -prefixlen 
+08/17/2016 10:50:52 PM INFO: -prefix_len 
+08/17/2016 10:50:52 PM INFO: 24 
+08/17/2016 10:50:52 PM INFO: -testeras 
+08/17/2016 10:50:52 PM INFO: -as 
+08/17/2016 10:50:52 PM INFO: 88 
+08/17/2016 10:50:52 PM INFO: -sutip 
+08/17/2016 10:50:52 PM INFO: -dut_ip 
+08/17/2016 10:50:52 PM INFO: 88.0.0.1 
+08/17/2016 10:50:52 PM INFO: -sutas 
+08/17/2016 10:50:52 PM INFO: -dut_as 
+08/17/2016 10:50:52 PM INFO: 88 
+08/17/2016 10:50:52 PM INFO: -holdtimer 
+08/17/2016 10:50:52 PM INFO: -hold_time_interval 
+08/17/2016 10:50:52 PM INFO: 90 
+08/17/2016 10:50:52 PM INFO: -keepalivetimer 
+08/17/2016 10:50:52 PM INFO: -update_Interval 
+08/17/2016 10:50:52 PM INFO: 30 
+08/17/2016 10:50:52 PM INFO: ----- TAG: body BgpSession::config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:52 PM INFO: Args:-type IBGP -ipv4_addr 88.0.0.2 -prefix_len 24 -as 88 -dut_ip 88.0.0.1 -dut_as 88 -hold_time_interval 90 -update_Interval 30  
+08/17/2016 10:50:52 PM INFO: ipv4:  
+08/17/2016 10:50:52 PM INFO: interface:::ixNet::OBJ-/vport:2/interface:1 
+08/17/2016 10:50:53 PM INFO: dut_ip:88.0.0.1 
+08/17/2016 10:50:53 PM INFO: ----- TAG: body BgpRouter::CreateRouteBlock C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:53 PM INFO: newlist: ::block2 
+08/17/2016 10:50:53 PM INFO: -addressfamily 
+08/17/2016 10:50:53 PM INFO: -address_family 
+08/17/2016 10:50:53 PM INFO: ipv4 
+08/17/2016 10:50:53 PM INFO: -firstroute 
+08/17/2016 10:50:53 PM INFO: -start 
+08/17/2016 10:50:53 PM INFO: 55.0.0.0 
+08/17/2016 10:50:53 PM INFO: -prefixlen 
+08/17/2016 10:50:53 PM INFO: -prefix_len 
+08/17/2016 10:50:53 PM INFO: 24 
+08/17/2016 10:50:53 PM INFO: -routenum 
+08/17/2016 10:50:53 PM INFO: -num 
+08/17/2016 10:50:53 PM INFO: 10 
+08/17/2016 10:50:53 PM INFO: -origin 
+08/17/2016 10:50:53 PM INFO: -origin 
+08/17/2016 10:50:53 PM INFO: igp 
+08/17/2016 10:50:53 PM INFO: -nexthop 
+08/17/2016 10:50:53 PM INFO: -nexthop 
+08/17/2016 10:50:53 PM INFO: 88.0.0.2 
+08/17/2016 10:50:53 PM INFO: -active 
+08/17/2016 10:50:53 PM INFO: -active 
+08/17/2016 10:50:53 PM INFO: enable 
+08/17/2016 10:50:53 PM INFO: -med 
+08/17/2016 10:50:53 PM INFO: -med 
+08/17/2016 10:50:53 PM INFO: 1 
+08/17/2016 10:50:53 PM INFO: ----- TAG: body RouteBlock::config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:53 PM INFO: Args:-address_family ipv4 -start 55.0.0.0 -prefix_len 24 -num 10 -origin igp -nexthop 88.0.0.2 -active enable -med 1  
+08/17/2016 10:50:53 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:50:53 PM INFO: Is Ipv4 address... 
+08/17/2016 10:50:53 PM INFO: ----- TAG: body BgpSession::set_route C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:50:53 PM INFO: Args:-route_block ::block2  
+08/17/2016 10:50:54 PM INFO: ----- TAG: body EmulationObject::enable C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:51:04 PM INFO: ----- TAG: body BgpRouter::CreateRouteBlock C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:51:04 PM INFO: newlist: ::block3 
+08/17/2016 10:51:04 PM INFO: -addressfamily 
+08/17/2016 10:51:04 PM INFO: -address_family 
+08/17/2016 10:51:04 PM INFO: ipv4 
+08/17/2016 10:51:04 PM INFO: -firstroute 
+08/17/2016 10:51:04 PM INFO: -start 
+08/17/2016 10:51:04 PM INFO: 10.12.52.1 10.13.24.5 20.1.1.3 
+08/17/2016 10:51:04 PM INFO: -prefixlen 
+08/17/2016 10:51:04 PM INFO: -prefix_len 
+08/17/2016 10:51:04 PM INFO: 24 
+08/17/2016 10:51:04 PM INFO: -active 
+08/17/2016 10:51:04 PM INFO: -active 
+08/17/2016 10:51:04 PM INFO: enable 
+08/17/2016 10:51:04 PM INFO: -origin 
+08/17/2016 10:51:04 PM INFO: -origin 
+08/17/2016 10:51:04 PM INFO: 1 
+08/17/2016 10:51:05 PM INFO: -nexthop 
+08/17/2016 10:51:05 PM INFO: -nexthop 
+08/17/2016 10:51:05 PM INFO: 66.0.0.2 
+08/17/2016 10:51:05 PM INFO: -med 
+08/17/2016 10:51:05 PM INFO: -med 
+08/17/2016 10:51:05 PM INFO: 1 
+08/17/2016 10:51:05 PM INFO: -originator_id 
+08/17/2016 10:51:05 PM INFO: -originator_id 
+08/17/2016 10:51:05 PM INFO: 192.85.3.1 
+08/17/2016 10:51:05 PM INFO: -cluster_list 
+08/17/2016 10:51:05 PM INFO: -cluster_list 
+08/17/2016 10:51:05 PM INFO: 192.86.1.1 
+08/17/2016 10:51:05 PM INFO: -communities 
+08/17/2016 10:51:05 PM INFO: -communities 
+08/17/2016 10:51:05 PM INFO: 1:1 
+08/17/2016 10:51:05 PM INFO: ----- TAG: body RouteBlock::config C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:51:05 PM INFO: Args:-address_family ipv4 -start {10.12.52.1 10.13.24.5 20.1.1.3} -prefix_len 24 -active enable -origin 1 -nexthop 66.0.0.2 -med 1 -originator_id 192.85.3.1 -cluster_list 192.86.1.1 -communities 1:1  
+08/17/2016 10:51:05 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:51:05 PM INFO: Is Ipv4 address... 
+08/17/2016 10:51:05 PM INFO: ----- TAG: body BgpSession::set_route C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 
+08/17/2016 10:51:05 PM INFO: Args:-route_block ::block3  
+08/17/2016 10:51:05 PM INFO: Judgement: ipv4 address format 
+08/17/2016 10:51:05 PM INFO: Is Ipv4 address... 
+08/17/2016 10:51:06 PM INFO: ----- TAG: body EmulationObject::enable C:/Ixia/Workspace/IxiaCapi/samples/ebgp.tcl ----- 

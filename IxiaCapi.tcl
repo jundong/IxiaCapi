@@ -38,9 +38,15 @@ proc GetEnvTcl { product } {
    set productKey     "HKEY_LOCAL_MACHINE\\SOFTWARE\\Ixia Communications\\$product"
    set versionKey     [ registry keys $productKey ]
    set latestKey      [ lindex $versionKey end ]
-   if { $latestKey == "Multiversion" } {
-      set latestKey   [ lindex $versionKey [ expr [ llength $versionKey ] - 2 ] ]
-   }
+
+    if { $latestKey == "Multiversion" } {
+        set latestKey   [ lindex $versionKey [ expr [ llength $versionKey ] - 2 ] ]
+        if { $latestKey == "InstallInfo" } {
+            set latestKey   [ lindex $versionKey [ expr [ llength $versionKey ] - 3 ] ]
+        }
+    } elseif { $latestKey == "InstallInfo" } {
+        set latestKey   [ lindex $versionKey [ expr [ llength $versionKey ] - 2 ] ]
+    }
    set installInfo    [ append productKey \\ $latestKey \\ InstallInfo ]            
    return             [ registry get $installInfo  HOMEDIR ]
 
