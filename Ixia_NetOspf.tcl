@@ -2192,12 +2192,5 @@ Deputs "Args:$args "
 	
 }
 
-proc BinToDec {value} {
-	set binary_vlaue $value
-	binary scan [binary format B* [format %032s $binary_vlaue]] I1 decimal_value
-	return $decimal_value
-}
-
-
 
 

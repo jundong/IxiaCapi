@@ -1,0 +1,687 @@
+11/27/2016 10:32:07 PM INFO: ----- TAG: body Port::ctor  ----- 
+11/27/2016 10:32:07 PM INFO: Step10 
+11/27/2016 10:32:07 PM INFO: connectionInfo : 
+11/27/2016 10:32:07 PM INFO: chas: card: port 
+11/27/2016 10:32:07 PM INFO: ----- TAG: body Port::ctor  ----- 
+11/27/2016 10:32:07 PM INFO: Step10 
+11/27/2016 10:32:07 PM INFO: connectionInfo : 
+11/27/2016 10:32:07 PM INFO: chas: card: port 
+11/27/2016 10:32:07 PM INFO: ----- TAG: body Traffic::ctor  ----- 
+11/27/2016 10:32:07 PM INFO: quickStream:true 
+11/27/2016 10:32:07 PM INFO: portObj:@tester_to_dta1 
+11/27/2016 10:32:07 PM INFO: ----- TAG: body Traffic::CreateQuickStream  ----- 
+11/27/2016 10:32:07 PM INFO: handle:::ixNet::OBJ-/traffic/trafficItem:3 
+11/27/2016 10:32:07 PM INFO: traffic item handle:::ixNet::OBJ-/traffic/trafficItem:3 
+11/27/2016 10:32:07 PM INFO: type:APP	protocol:IPv4 
+11/27/2016 10:32:07 PM INFO: constructor success 
+11/27/2016 10:32:08 PM INFO: ----- TAG: body Ipv4Hdr::config  ----- 
+11/27/2016 10:32:08 PM INFO: Step10 
+11/27/2016 10:32:08 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:08 PM INFO: Is Ipv4 address... 
+11/27/2016 10:32:08 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:08 PM INFO: Is Ipv4 address... 
+11/27/2016 10:32:08 PM INFO: Pro: ipv4 
+11/27/2016 10:32:08 PM INFO: Step50 
+11/27/2016 10:32:08 PM INFO: Step100 
+11/27/2016 10:32:08 PM INFO: Step110 
+11/27/2016 10:32:08 PM INFO: sarepeat:1 
+11/27/2016 10:32:08 PM INFO: saStep:1 
+11/27/2016 10:32:08 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:08 PM INFO: Invalid ipv4 format 
+11/27/2016 10:32:08 PM INFO: saStep Ip validation...0... 
+11/27/2016 10:32:08 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:08 PM INFO: Invalid ipv4 format 
+11/27/2016 10:32:08 PM INFO: saoffset:0 
+11/27/2016 10:32:08 PM INFO: segment:0 remain:0.0 
+11/27/2016 10:32:08 PM INFO: step:1 
+11/27/2016 10:32:08 PM INFO: ipStep:1 
+11/27/2016 10:32:08 PM INFO: ipStep:0.1 
+11/27/2016 10:32:08 PM INFO: ipStep:0.0.1 
+11/27/2016 10:32:08 PM INFO: ipStep:0.0.0.1 
+11/27/2016 10:32:08 PM INFO: saStep:0.0.0.1 
+11/27/2016 10:32:08 PM INFO: fields:srcIp optionals:0 autos:0 meshes:0 
+11/27/2016 10:32:08 PM INFO: Step200 
+11/27/2016 10:32:08 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:08 PM INFO: Invalid ipv4 format 
+11/27/2016 10:32:08 PM INFO: segment:0 remain:0.0 
+11/27/2016 10:32:08 PM INFO: step:1 
+11/27/2016 10:32:08 PM INFO: ipStep:1 
+11/27/2016 10:32:08 PM INFO: ipStep:0.1 
+11/27/2016 10:32:08 PM INFO: ipStep:0.0.1 
+11/27/2016 10:32:08 PM INFO: ipStep:0.0.0.1 
+11/27/2016 10:32:08 PM INFO: daStep:0.0.0.1 
+11/27/2016 10:32:08 PM INFO: fields:srcIp dstIp optionals:0 0 autos:0 0 meshes:0 0 
+11/27/2016 10:32:08 PM INFO: ----- TAG: body Header::config  ----- 
+11/27/2016 10:32:08 PM INFO: Args:@tester.pdu.ipv4(1) config -src 25.1.1.1 -dst 26.1.1.1  
+11/27/2016 10:32:08 PM INFO: type:APPLIST	protocol:vlan 
+11/27/2016 10:32:08 PM INFO: constructor success 
+11/27/2016 10:32:08 PM INFO: ----- TAG: body VlanHdr::config  ----- 
+11/27/2016 10:32:08 PM INFO: Pro: vlan 
+11/27/2016 10:32:08 PM INFO: type:APP	protocol:vlan 
+11/27/2016 10:32:08 PM INFO: constructor success 
+11/27/2016 10:32:08 PM INFO: ----- TAG: body SingleVlanHdr::config  ----- 
+11/27/2016 10:32:08 PM INFO: Pro: vlan 
+11/27/2016 10:32:08 PM INFO: Step10 
+11/27/2016 10:32:08 PM INFO: fields:vlanID optionals:0 autos:0 meshes:0 
+11/27/2016 10:32:08 PM INFO: fields:vlanID vlanUserPriority optionals:0 0 autos:0 0 meshes:0 0 
+11/27/2016 10:32:08 PM INFO: fields:vlanID vlanUserPriority cfi optionals:0 0 0 autos:0 0 0 meshes:0 0 0 
+11/27/2016 10:32:08 PM INFO: ----- TAG: body Header::config  ----- 
+11/27/2016 10:32:08 PM INFO: Args:-id1 200 -id1_num 1 -id1_step 1 -pri1 1 -pri1_num 1 -cfi1 0 -type1 auto  
+11/27/2016 10:32:08 PM INFO: type:APP 
+11/27/2016 10:32:08 PM INFO: type:SET	protocol:Ethernet 
+11/27/2016 10:32:08 PM INFO: constructor success 
+11/27/2016 10:32:08 PM INFO: ----- TAG: body EtherHdr::config  ----- 
+11/27/2016 10:32:08 PM INFO: Step10 
+11/27/2016 10:32:08 PM INFO: Pro: ethernet 
+11/27/2016 10:32:08 PM INFO: Step40 
+11/27/2016 10:32:08 PM INFO: Step50 
+11/27/2016 10:32:08 PM INFO: Step60 
+11/27/2016 10:32:08 PM INFO: Step90 
+11/27/2016 10:32:08 PM INFO: segment:0 remain:0.0 
+11/27/2016 10:32:08 PM INFO: step:1 stepHex:01 
+11/27/2016 10:32:08 PM INFO: macStep:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:00:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:00:00:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:00:00:00:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:00:00:00:00:01 
+11/27/2016 10:32:08 PM INFO: step:00:00:00:00:00:01 
+11/27/2016 10:32:08 PM INFO: fields:destinationAddress optionals:0 autos:0 meshes:0 
+11/27/2016 10:32:08 PM INFO: Step100 
+11/27/2016 10:32:08 PM INFO: Step110 
+11/27/2016 10:32:08 PM INFO: segment:0 remain:0.0 
+11/27/2016 10:32:08 PM INFO: step:1 stepHex:01 
+11/27/2016 10:32:08 PM INFO: macStep:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:00:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:00:00:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:00:00:00:01 
+11/27/2016 10:32:08 PM INFO: macStep:00:00:00:00:00:01 
+11/27/2016 10:32:08 PM INFO: step:00:00:00:00:00:01 
+11/27/2016 10:32:08 PM INFO: fields:destinationAddress sourceAddress optionals:0 0 autos:0 0 meshes:0 0 
+11/27/2016 10:32:08 PM INFO: Step200 
+11/27/2016 10:32:08 PM INFO: fields:destinationAddress sourceAddress etherType optionals:0 0 0 autos:0 0 1 meshes:0 0 0 
+11/27/2016 10:32:08 PM INFO: ----- TAG: body Header::config  ----- 
+11/27/2016 10:32:08 PM INFO: Args:-src 00:00:00:03:02:01 -dst 00:00:01:00:00:01  
+11/27/2016 10:32:08 PM INFO: type:SET 
+11/27/2016 10:32:08 PM INFO: default interface: 
+11/27/2016 10:32:08 PM INFO: default mac: 
+11/27/2016 10:32:08 PM INFO: default ip:1.1.1.1 
+11/27/2016 10:32:08 PM INFO: ----- TAG: body Traffic::config  ----- 
+11/27/2016 10:32:08 PM INFO: Args:-pdu {@tester.pdu.eth(1) @tester.pdu.vlan(1) @tester.pdu.ipv4(1)}  
+11/27/2016 10:32:08 PM INFO: pdu:@tester.pdu.eth(1) @tester.pdu.vlan(1) @tester.pdu.ipv4(1) 
+11/27/2016 10:32:08 PM INFO: Step100 
+11/27/2016 10:32:08 PM INFO: Config pdu:@tester.pdu.eth(1) @tester.pdu.vlan(1) @tester.pdu.ipv4(1) 
+11/27/2016 10:32:08 PM INFO: pdu:@tester.pdu.eth(1) @tester.pdu.vlan(1) @tester.pdu.ipv4(1) 
+11/27/2016 10:32:08 PM INFO: head:@tester.pdu.eth(1) 
+11/27/2016 10:32:08 PM INFO: GetObject search... 
+11/27/2016 10:32:08 PM INFO: name: @tester.pdu.eth(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:08 PM INFO: head obj:::@tester.pdu.eth(1) 
+11/27/2016 10:32:08 PM INFO: head:@tester.pdu.vlan(1) 
+11/27/2016 10:32:08 PM INFO: GetObject search... 
+11/27/2016 10:32:08 PM INFO: name: @tester.pdu.vlan(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:08 PM INFO: head obj:::@tester.pdu.vlan(1) 
+11/27/2016 10:32:08 PM INFO: head:@tester.pdu.ipv4(1) 
+11/27/2016 10:32:08 PM INFO: GetObject search... 
+11/27/2016 10:32:08 PM INFO: name: @tester.pdu.ipv4(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:08 PM INFO: head obj:::@tester.pdu.ipv4(1) 
+11/27/2016 10:32:08 PM INFO: stack level:1 
+11/27/2016 10:32:08 PM INFO: GetObject search... 
+11/27/2016 10:32:08 PM INFO: name: @tester.pdu.eth(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:08 PM INFO: PDU type: SET  
+11/27/2016 10:32:08 PM INFO: Step10 
+11/27/2016 10:32:08 PM INFO: Pro: Ethernet  
+11/27/2016 10:32:08 PM INFO: Step14 
+11/27/2016 10:32:08 PM INFO: first ethernet set... 
+11/27/2016 10:32:08 PM INFO: PDU type: SET  
+11/27/2016 10:32:08 PM INFO: ----- TAG: body Traffic::GetProtocolTemp  ----- 
+11/27/2016 10:32:08 PM INFO: Get protocol... 
+11/27/2016 10:32:08 PM INFO: protocol to match:Ethernet 
+11/27/2016 10:32:08 PM INFO: protocol stack: ::ixNet::OBJ-/traffic/protocolTemplate:"ethernet" 
+11/27/2016 10:32:08 PM INFO: Step20 
+11/27/2016 10:32:08 PM INFO: stream:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1 
+11/27/2016 10:32:08 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-2" 
+11/27/2016 10:32:08 PM INFO: Stack list after removal:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-2" 
+11/27/2016 10:32:08 PM INFO: Stack ready to add:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-2" 
+11/27/2016 10:32:08 PM INFO: Stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:08 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-2" 
+11/27/2016 10:32:08 PM INFO: Step43 
+11/27/2016 10:32:08 PM INFO: PDU:
+	Modes:Incrementing Incrementing Reserved
+	Fields:destinationAddress sourceAddress etherType
+	Configs:{{0 00:00:01:00:00:01 1 00:00:00:00:00:01}} {{0 00:00:00:03:02:01 1 00:00:00:00:00:01}} 0
+	Optional:0 0 0
+	Autos:0 0 1
+	Meshes:0 0 0 
+11/27/2016 10:32:08 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:09 PM INFO: field:destinationAddress 
+11/27/2016 10:32:09 PM INFO: mesh:0 
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:09 PM INFO: value:destinationAddress 
+11/27/2016 10:32:09 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.destinationAddress-1" 
+11/27/2016 10:32:09 PM INFO: Step47 
+11/27/2016 10:32:09 PM INFO: Step49 
+11/27/2016 10:32:09 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.destinationAddress-1" 
+11/27/2016 10:32:09 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:09 PM INFO: Mode:increment	Protocol:Ethernet	Config:{0 00:00:01:00:00:01 1 00:00:00:00:00:01} 
+11/27/2016 10:32:09 PM INFO: start:00:00:01:00:00:01 count:1 step:00:00:00:00:00:01 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.destinationAddress-1" 
+11/27/2016 10:32:09 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:09 PM INFO: field:sourceAddress 
+11/27/2016 10:32:09 PM INFO: mesh:0 
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:09 PM INFO: value:sourceAddress 
+11/27/2016 10:32:09 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.sourceAddress-2" 
+11/27/2016 10:32:09 PM INFO: Step47 
+11/27/2016 10:32:09 PM INFO: Step49 
+11/27/2016 10:32:09 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.sourceAddress-2" 
+11/27/2016 10:32:09 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:09 PM INFO: Mode:increment	Protocol:Ethernet	Config:{0 00:00:00:03:02:01 1 00:00:00:00:00:01} 
+11/27/2016 10:32:09 PM INFO: start:00:00:00:03:02:01 count:1 step:00:00:00:00:00:01 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.sourceAddress-2" 
+11/27/2016 10:32:09 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:09 PM INFO: field:etherType 
+11/27/2016 10:32:09 PM INFO: mesh:0 
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:09 PM INFO: value:etherType 
+11/27/2016 10:32:09 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.etherType-3" 
+11/27/2016 10:32:09 PM INFO: Step47 
+11/27/2016 10:32:09 PM INFO: Step48 
+11/27/2016 10:32:09 PM INFO: @@@@@@@@@@5Stack Link list: 
+11/27/2016 10:32:09 PM INFO: GetObject search... 
+11/27/2016 10:32:09 PM INFO: name: @tester.pdu.vlan(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:09 PM INFO: PDU type: APPLIST  
+11/27/2016 10:32:09 PM INFO: Step10 
+11/27/2016 10:32:09 PM INFO: Pro: Vlan  
+11/27/2016 10:32:09 PM INFO: Step14 
+11/27/2016 10:32:09 PM INFO: PDU type: APPLIST  
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::GetProtocolTemp  ----- 
+11/27/2016 10:32:09 PM INFO: Get protocol... 
+11/27/2016 10:32:09 PM INFO: protocol to match:Vlan 
+11/27/2016 10:32:09 PM INFO: protocol stack: ::ixNet::OBJ-/traffic/protocolTemplate:"vlan" 
+11/27/2016 10:32:09 PM INFO: Step20 
+11/27/2016 10:32:09 PM INFO: name:::@tester.pdu.vlan(1) 
+11/27/2016 10:32:09 PM INFO: objList:vlan944733492 
+11/27/2016 10:32:09 PM INFO: stream:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1 
+11/27/2016 10:32:09 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-2" 
+11/27/2016 10:32:09 PM INFO: appendHeader:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:09 PM INFO: stack to be added: ::ixNet::OBJ-/traffic/protocolTemplate:"vlan" 
+11/27/2016 10:32:09 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" 
+11/27/2016 10:32:09 PM INFO: stackLevel:2 
+11/27/2016 10:32:09 PM INFO: Stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" 
+11/27/2016 10:32:09 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-3" 
+11/27/2016 10:32:09 PM INFO: Step43 
+11/27/2016 10:32:09 PM INFO: name:::@tester.pdu.vlan(1) 
+11/27/2016 10:32:09 PM INFO: objList:vlan944733492 
+11/27/2016 10:32:09 PM INFO: single header name: vlan944733492 
+11/27/2016 10:32:09 PM INFO: GetObject search... 
+11/27/2016 10:32:09 PM INFO: name: vlan944733492, objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:09 PM INFO: single header obj: ::VlanHdr::vlan944733492 
+11/27/2016 10:32:09 PM INFO: mode Incrementing Incrementing Fixed field vlanID vlanUserPriority cfi conf {{0 200 1 1}} {{0 1 1 1}} 0 opt 0 0 0 auto 0 0 0 
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:09 PM INFO: value:vlanID 
+11/27/2016 10:32:09 PM INFO: Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanID-3" 
+11/27/2016 10:32:09 PM INFO: Step47 
+11/27/2016 10:32:09 PM INFO: Step49 
+11/27/2016 10:32:09 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanID-3" 
+11/27/2016 10:32:09 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:09 PM INFO: Mode:increment	Protocol:Vlan	Config:{0 200 1 1} 
+11/27/2016 10:32:09 PM INFO: start:200 count:1 step:1 mode:increment obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanID-3" 
+11/27/2016 10:32:09 PM INFO: mode Incrementing Incrementing Fixed field vlanID vlanUserPriority cfi conf {{0 200 1 1}} {{0 1 1 1}} 0 opt 0 0 0 auto 0 0 0 
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:09 PM INFO: value:vlanUserPriority 
+11/27/2016 10:32:09 PM INFO: Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanUserPriority-1" 
+11/27/2016 10:32:09 PM INFO: Step47 
+11/27/2016 10:32:09 PM INFO: Step49 
+11/27/2016 10:32:09 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanUserPriority-1" 
+11/27/2016 10:32:09 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:09 PM INFO: Mode:increment	Protocol:Vlan	Config:{0 1 1 1} 
+11/27/2016 10:32:09 PM INFO: start:1 count:1 step:1 mode:increment obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanUserPriority-1" 
+11/27/2016 10:32:09 PM INFO: mode Incrementing Incrementing Fixed field vlanID vlanUserPriority cfi conf {{0 200 1 1}} {{0 1 1 1}} 0 opt 0 0 0 auto 0 0 0 
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:09 PM INFO: value:cfi 
+11/27/2016 10:32:09 PM INFO: Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.cfi-2" 
+11/27/2016 10:32:09 PM INFO: Step47 
+11/27/2016 10:32:09 PM INFO: Step49 
+11/27/2016 10:32:09 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.cfi-2" 
+11/27/2016 10:32:09 PM INFO: Mode:Fixed 
+11/27/2016 10:32:09 PM INFO: Fixed:Vlan	cfi	0 
+11/27/2016 10:32:09 PM INFO: @@@@@@@@@@5Stack Link list: 
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::SetStackLink  ----- 
+11/27/2016 10:32:09 PM INFO: @@@@@@@@stackLinkList:, header:vlan, null:null 
+11/27/2016 10:32:09 PM INFO: GetObject search... 
+11/27/2016 10:32:09 PM INFO: name: @tester.pdu.ipv4(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:09 PM INFO: PDU type: APP  
+11/27/2016 10:32:09 PM INFO: Step10 
+11/27/2016 10:32:09 PM INFO: Pro: IPv4  
+11/27/2016 10:32:09 PM INFO: Step14 
+11/27/2016 10:32:09 PM INFO: PDU type: APP  
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::GetProtocolTemp  ----- 
+11/27/2016 10:32:09 PM INFO: Get protocol... 
+11/27/2016 10:32:09 PM INFO: protocol to match:IPv4 
+11/27/2016 10:32:09 PM INFO: protocol stack: ::ixNet::OBJ-/traffic/protocolTemplate:"ipv4" 
+11/27/2016 10:32:09 PM INFO: Step20 
+11/27/2016 10:32:09 PM INFO: stream:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1 
+11/27/2016 10:32:09 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-3" 
+11/27/2016 10:32:09 PM INFO: appendHeader:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" 
+11/27/2016 10:32:09 PM INFO: stack to be added: ::ixNet::OBJ-/traffic/protocolTemplate:"ipv4" 
+11/27/2016 10:32:09 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:09 PM INFO: stackLevel:3 
+11/27/2016 10:32:09 PM INFO: Stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:09 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-4" 
+11/27/2016 10:32:09 PM INFO: Step43 
+11/27/2016 10:32:09 PM INFO: PDU:
+	Modes:Incrementing Incrementing
+	Fields:srcIp dstIp
+	Configs:{{0 25.1.1.1 1 0.0.0.1}} {{0 26.1.1.1 1 0.0.0.1}}
+	Optional:0 0
+	Autos:0 0
+	Meshes:0 0 
+11/27/2016 10:32:09 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:09 PM INFO: field:srcIp 
+11/27/2016 10:32:09 PM INFO: mesh:0 
+11/27/2016 10:32:09 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:10 PM INFO: value:srcIp 
+11/27/2016 10:32:10 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.srcIp-27" 
+11/27/2016 10:32:10 PM INFO: Step47 
+11/27/2016 10:32:10 PM INFO: Step49 
+11/27/2016 10:32:10 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.srcIp-27" 
+11/27/2016 10:32:10 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:10 PM INFO: Mode:increment	Protocol:IPv4	Config:{0 25.1.1.1 1 0.0.0.1} 
+11/27/2016 10:32:10 PM INFO: start:25.1.1.1 count:1 step:0.0.0.1 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.srcIp-27" 
+11/27/2016 10:32:10 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:10 PM INFO: field:dstIp 
+11/27/2016 10:32:10 PM INFO: mesh:0 
+11/27/2016 10:32:10 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:10 PM INFO: value:dstIp 
+11/27/2016 10:32:10 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.dstIp-28" 
+11/27/2016 10:32:10 PM INFO: Step47 
+11/27/2016 10:32:10 PM INFO: Step49 
+11/27/2016 10:32:10 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.dstIp-28" 
+11/27/2016 10:32:10 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:10 PM INFO: Mode:increment	Protocol:IPv4	Config:{0 26.1.1.1 1 0.0.0.1} 
+11/27/2016 10:32:10 PM INFO: start:26.1.1.1 count:1 step:0.0.0.1 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.dstIp-28" 
+11/27/2016 10:32:10 PM INFO: @@@@@@@@@@5Stack Link list: 
+11/27/2016 10:32:10 PM INFO: Step150 
+11/27/2016 10:32:10 PM INFO: Step190 
+11/27/2016 10:32:10 PM INFO: Step200 
+11/27/2016 10:32:10 PM INFO: Step230 
+11/27/2016 10:32:10 PM INFO: Step240 
+11/27/2016 10:32:10 PM INFO: Step250 
+11/27/2016 10:32:10 PM INFO: Step250 
+11/27/2016 10:32:10 PM INFO: ----- TAG: body Ipv4Hdr::config  ----- 
+11/27/2016 10:32:10 PM INFO: Step10 
+11/27/2016 10:32:10 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:10 PM INFO: Is Ipv4 address... 
+11/27/2016 10:32:10 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:10 PM INFO: Is Ipv4 address... 
+11/27/2016 10:32:10 PM INFO: Pro: ipv4 
+11/27/2016 10:32:10 PM INFO: Step50 
+11/27/2016 10:32:10 PM INFO: Step100 
+11/27/2016 10:32:10 PM INFO: Step110 
+11/27/2016 10:32:10 PM INFO: sarepeat:1 
+11/27/2016 10:32:10 PM INFO: saStep:1 
+11/27/2016 10:32:10 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:10 PM INFO: Invalid ipv4 format 
+11/27/2016 10:32:10 PM INFO: saStep Ip validation...0... 
+11/27/2016 10:32:10 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:10 PM INFO: Invalid ipv4 format 
+11/27/2016 10:32:10 PM INFO: saoffset:0 
+11/27/2016 10:32:10 PM INFO: segment:0 remain:0.0 
+11/27/2016 10:32:10 PM INFO: step:1 
+11/27/2016 10:32:10 PM INFO: ipStep:1 
+11/27/2016 10:32:10 PM INFO: ipStep:0.1 
+11/27/2016 10:32:10 PM INFO: ipStep:0.0.1 
+11/27/2016 10:32:10 PM INFO: ipStep:0.0.0.1 
+11/27/2016 10:32:10 PM INFO: saStep:0.0.0.1 
+11/27/2016 10:32:10 PM INFO: fields:srcIp dstIp srcIp optionals:0 0 0 autos:0 0 0 meshes:0 0 0 
+11/27/2016 10:32:10 PM INFO: Step200 
+11/27/2016 10:32:10 PM INFO: Judgement: ipv4 address format 
+11/27/2016 10:32:10 PM INFO: Invalid ipv4 format 
+11/27/2016 10:32:10 PM INFO: segment:0 remain:0.0 
+11/27/2016 10:32:10 PM INFO: step:1 
+11/27/2016 10:32:10 PM INFO: ipStep:1 
+11/27/2016 10:32:10 PM INFO: ipStep:0.1 
+11/27/2016 10:32:10 PM INFO: ipStep:0.0.1 
+11/27/2016 10:32:10 PM INFO: ipStep:0.0.0.1 
+11/27/2016 10:32:10 PM INFO: daStep:0.0.0.1 
+11/27/2016 10:32:10 PM INFO: fields:srcIp dstIp srcIp dstIp optionals:0 0 0 0 autos:0 0 0 0 meshes:0 0 0 0 
+11/27/2016 10:32:10 PM INFO: ----- TAG: body Header::config  ----- 
+11/27/2016 10:32:10 PM INFO: Args:@tester.pdu.ipv4(1) config -src 1.1.1.1 -dst 11.1.1.1 -modify 1  
+11/27/2016 10:32:10 PM INFO: default interface: 
+11/27/2016 10:32:10 PM INFO: default mac: 
+11/27/2016 10:32:10 PM INFO: default ip:1.1.1.1 
+11/27/2016 10:32:10 PM INFO: ----- TAG: body Traffic::config  ----- 
+11/27/2016 10:32:10 PM INFO: Args:-pdu @tester.pdu.ipv4(1)  
+11/27/2016 10:32:10 PM INFO: pdu:@tester.pdu.ipv4(1) 
+11/27/2016 10:32:10 PM INFO: Step100 
+11/27/2016 10:32:10 PM INFO: Config pdu:@tester.pdu.ipv4(1) 
+11/27/2016 10:32:10 PM INFO: pdu:@tester.pdu.ipv4(1) 
+11/27/2016 10:32:10 PM INFO: head:@tester.pdu.ipv4(1) 
+11/27/2016 10:32:10 PM INFO: GetObject search... 
+11/27/2016 10:32:10 PM INFO: name: @tester.pdu.ipv4(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:10 PM INFO: head obj:::@tester.pdu.ipv4(1) 
+11/27/2016 10:32:10 PM INFO: stack level:1 
+11/27/2016 10:32:10 PM INFO: GetObject search... 
+11/27/2016 10:32:10 PM INFO: name: @tester.pdu.ipv4(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:10 PM INFO: PDU type: MOD  
+11/27/2016 10:32:10 PM INFO: Step10 
+11/27/2016 10:32:10 PM INFO: Pro: IPv4  
+11/27/2016 10:32:10 PM INFO: Step14 
+11/27/2016 10:32:10 PM INFO: PDU type: MOD  
+11/27/2016 10:32:10 PM INFO: ----- TAG: body Traffic::GetProtocolTemp  ----- 
+11/27/2016 10:32:10 PM INFO: Get protocol... 
+11/27/2016 10:32:10 PM INFO: protocol to match:IPv4 
+11/27/2016 10:32:10 PM INFO: protocol stack: ::ixNet::OBJ-/traffic/protocolTemplate:"ipv4" 
+11/27/2016 10:32:10 PM INFO: Step20 
+11/27/2016 10:32:10 PM INFO: protocol:IPv4 
+11/27/2016 10:32:10 PM INFO: pro:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:10 PM INFO: pro:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" 
+11/27/2016 10:32:10 PM INFO: pro:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:10 PM INFO: Stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:10 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-4" 
+11/27/2016 10:32:10 PM INFO: Step43 
+11/27/2016 10:32:10 PM INFO: PDU:
+	Modes:Incrementing Incrementing Incrementing Incrementing
+	Fields:srcIp dstIp srcIp dstIp
+	Configs:{{0 25.1.1.1 1 0.0.0.1}} {{0 26.1.1.1 1 0.0.0.1}} {{0 1.1.1.1 1 0.0.0.1}} {{0 11.1.1.1 1 0.0.0.1}}
+	Optional:0 0 0 0
+	Autos:0 0 0 0
+	Meshes:0 0 0 0 
+11/27/2016 10:32:10 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:10 PM INFO: field:srcIp 
+11/27/2016 10:32:10 PM INFO: mesh:0 
+11/27/2016 10:32:10 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:10 PM INFO: value:srcIp 
+11/27/2016 10:32:10 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.srcIp-27" 
+11/27/2016 10:32:10 PM INFO: Step47 
+11/27/2016 10:32:10 PM INFO: Step49 
+11/27/2016 10:32:10 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.srcIp-27" 
+11/27/2016 10:32:10 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:10 PM INFO: Mode:increment	Protocol:IPv4	Config:{0 25.1.1.1 1 0.0.0.1} 
+11/27/2016 10:32:10 PM INFO: start:25.1.1.1 count:1 step:0.0.0.1 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.srcIp-27" 
+11/27/2016 10:32:10 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:10 PM INFO: field:dstIp 
+11/27/2016 10:32:10 PM INFO: mesh:0 
+11/27/2016 10:32:10 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:10 PM INFO: value:dstIp 
+11/27/2016 10:32:10 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.dstIp-28" 
+11/27/2016 10:32:10 PM INFO: Step47 
+11/27/2016 10:32:10 PM INFO: Step49 
+11/27/2016 10:32:10 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.dstIp-28" 
+11/27/2016 10:32:10 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:10 PM INFO: Mode:increment	Protocol:IPv4	Config:{0 26.1.1.1 1 0.0.0.1} 
+11/27/2016 10:32:10 PM INFO: start:26.1.1.1 count:1 step:0.0.0.1 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.dstIp-28" 
+11/27/2016 10:32:10 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:10 PM INFO: field:srcIp 
+11/27/2016 10:32:11 PM INFO: mesh:0 
+11/27/2016 10:32:11 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:11 PM INFO: value:srcIp 
+11/27/2016 10:32:11 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.srcIp-27" 
+11/27/2016 10:32:11 PM INFO: Step47 
+11/27/2016 10:32:11 PM INFO: Step49 
+11/27/2016 10:32:11 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.srcIp-27" 
+11/27/2016 10:32:11 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:11 PM INFO: Mode:increment	Protocol:IPv4	Config:{0 1.1.1.1 1 0.0.0.1} 
+11/27/2016 10:32:11 PM INFO: start:1.1.1.1 count:1 step:0.0.0.1 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.srcIp-27" 
+11/27/2016 10:32:11 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" 
+11/27/2016 10:32:11 PM INFO: field:dstIp 
+11/27/2016 10:32:11 PM INFO: mesh:0 
+11/27/2016 10:32:11 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:11 PM INFO: value:dstIp 
+11/27/2016 10:32:11 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.dstIp-28" 
+11/27/2016 10:32:11 PM INFO: Step47 
+11/27/2016 10:32:11 PM INFO: Step49 
+11/27/2016 10:32:11 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.dstIp-28" 
+11/27/2016 10:32:11 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:11 PM INFO: Mode:increment	Protocol:IPv4	Config:{0 11.1.1.1 1 0.0.0.1} 
+11/27/2016 10:32:11 PM INFO: start:11.1.1.1 count:1 step:0.0.0.1 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3"/field:"ipv4.header.dstIp-28" 
+11/27/2016 10:32:11 PM INFO: @@@@@@@@@@5Stack Link list: 
+11/27/2016 10:32:11 PM INFO: Step150 
+11/27/2016 10:32:11 PM INFO: Step190 
+11/27/2016 10:32:11 PM INFO: Step200 
+11/27/2016 10:32:11 PM INFO: Step230 
+11/27/2016 10:32:11 PM INFO: Step240 
+11/27/2016 10:32:11 PM INFO: Step250 
+11/27/2016 10:32:11 PM INFO: Step250 
+11/27/2016 10:32:11 PM INFO: ----- TAG: body EtherHdr::config  ----- 
+11/27/2016 10:32:11 PM INFO: Step10 
+11/27/2016 10:32:11 PM INFO: Pro: ethernet 
+11/27/2016 10:32:11 PM INFO: Step40 
+11/27/2016 10:32:11 PM INFO: Step50 
+11/27/2016 10:32:11 PM INFO: Step60 
+11/27/2016 10:32:11 PM INFO: Step90 
+11/27/2016 10:32:11 PM INFO: segment:0 remain:0.0 
+11/27/2016 10:32:11 PM INFO: step:1 stepHex:01 
+11/27/2016 10:32:11 PM INFO: macStep:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:00:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:00:00:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:00:00:00:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:00:00:00:00:01 
+11/27/2016 10:32:11 PM INFO: step:00:00:00:00:00:01 
+11/27/2016 10:32:11 PM INFO: fields:destinationAddress sourceAddress etherType destinationAddress optionals:0 0 0 0 autos:0 0 1 0 meshes:0 0 0 0 
+11/27/2016 10:32:11 PM INFO: Step100 
+11/27/2016 10:32:11 PM INFO: Step110 
+11/27/2016 10:32:11 PM INFO: segment:0 remain:0.0 
+11/27/2016 10:32:11 PM INFO: step:1 stepHex:01 
+11/27/2016 10:32:11 PM INFO: macStep:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:00:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:00:00:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:00:00:00:01 
+11/27/2016 10:32:11 PM INFO: macStep:00:00:00:00:00:01 
+11/27/2016 10:32:11 PM INFO: step:00:00:00:00:00:01 
+11/27/2016 10:32:11 PM INFO: fields:destinationAddress sourceAddress etherType destinationAddress sourceAddress optionals:0 0 0 0 0 autos:0 0 1 0 0 meshes:0 0 0 0 0 
+11/27/2016 10:32:11 PM INFO: Step200 
+11/27/2016 10:32:11 PM INFO: fields:destinationAddress sourceAddress etherType destinationAddress sourceAddress etherType optionals:0 0 0 0 0 0 autos:0 0 1 0 0 1 meshes:0 0 0 0 0 0 
+11/27/2016 10:32:11 PM INFO: ----- TAG: body Header::config  ----- 
+11/27/2016 10:32:11 PM INFO: Args:-src aa:bb:00:03:02:01 -dst ee:ff:01:00:00:01 -modify 1  
+11/27/2016 10:32:11 PM INFO: type:MOD 
+11/27/2016 10:32:11 PM INFO: default interface: 
+11/27/2016 10:32:11 PM INFO: default mac: 
+11/27/2016 10:32:11 PM INFO: default ip:1.1.1.1 
+11/27/2016 10:32:11 PM INFO: ----- TAG: body Traffic::config  ----- 
+11/27/2016 10:32:11 PM INFO: Args:-pdu @tester.pdu.eth(1)  
+11/27/2016 10:32:11 PM INFO: pdu:@tester.pdu.eth(1) 
+11/27/2016 10:32:11 PM INFO: Step100 
+11/27/2016 10:32:11 PM INFO: Config pdu:@tester.pdu.eth(1) 
+11/27/2016 10:32:11 PM INFO: pdu:@tester.pdu.eth(1) 
+11/27/2016 10:32:11 PM INFO: head:@tester.pdu.eth(1) 
+11/27/2016 10:32:11 PM INFO: GetObject search... 
+11/27/2016 10:32:11 PM INFO: name: @tester.pdu.eth(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:11 PM INFO: head obj:::@tester.pdu.eth(1) 
+11/27/2016 10:32:11 PM INFO: stack level:1 
+11/27/2016 10:32:11 PM INFO: GetObject search... 
+11/27/2016 10:32:11 PM INFO: name: @tester.pdu.eth(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 
+11/27/2016 10:32:11 PM INFO: PDU type: MOD  
+11/27/2016 10:32:11 PM INFO: Step10 
+11/27/2016 10:32:11 PM INFO: Pro: Ethernet  
+11/27/2016 10:32:11 PM INFO: Step14 
+11/27/2016 10:32:11 PM INFO: PDU type: MOD  
+11/27/2016 10:32:11 PM INFO: ----- TAG: body Traffic::GetProtocolTemp  ----- 
+11/27/2016 10:32:11 PM INFO: Get protocol... 
+11/27/2016 10:32:11 PM INFO: protocol to match:Ethernet 
+11/27/2016 10:32:11 PM INFO: protocol stack: ::ixNet::OBJ-/traffic/protocolTemplate:"ethernet" 
+11/27/2016 10:32:11 PM INFO: Step20 
+11/27/2016 10:32:11 PM INFO: protocol:Ethernet 
+11/27/2016 10:32:11 PM INFO: pro:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:11 PM INFO: Stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:11 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-4" 
+11/27/2016 10:32:11 PM INFO: Step43 
+11/27/2016 10:32:11 PM INFO: PDU:
+	Modes:Incrementing Incrementing Reserved Incrementing Incrementing Reserved
+	Fields:destinationAddress sourceAddress etherType destinationAddress sourceAddress etherType
+	Configs:{{0 00:00:01:00:00:01 1 00:00:00:00:00:01}} {{0 00:00:00:03:02:01 1 00:00:00:00:00:01}} 0 {{0 ee:ff:01:00:00:01 1 00:00:00:00:00:01}} {{0 aa:bb:00:03:02:01 1 00:00:00:00:00:01}} 0
+	Optional:0 0 0 0 0 0
+	Autos:0 0 1 0 0 1
+	Meshes:0 0 0 0 0 0 
+11/27/2016 10:32:11 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:11 PM INFO: field:destinationAddress 
+11/27/2016 10:32:11 PM INFO: mesh:0 
+11/27/2016 10:32:11 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:11 PM INFO: value:destinationAddress 
+11/27/2016 10:32:11 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.destinationAddress-1" 
+11/27/2016 10:32:11 PM INFO: Step47 
+11/27/2016 10:32:11 PM INFO: Step49 
+11/27/2016 10:32:11 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.destinationAddress-1" 
+11/27/2016 10:32:11 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:11 PM INFO: Mode:increment	Protocol:Ethernet	Config:{0 00:00:01:00:00:01 1 00:00:00:00:00:01} 
+11/27/2016 10:32:11 PM INFO: start:00:00:01:00:00:01 count:1 step:00:00:00:00:00:01 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.destinationAddress-1" 
+11/27/2016 10:32:11 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:11 PM INFO: field:sourceAddress 
+11/27/2016 10:32:11 PM INFO: mesh:0 
+11/27/2016 10:32:11 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:11 PM INFO: value:sourceAddress 
+11/27/2016 10:32:11 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.sourceAddress-2" 
+11/27/2016 10:32:11 PM INFO: Step47 
+11/27/2016 10:32:11 PM INFO: Step49 
+11/27/2016 10:32:11 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.sourceAddress-2" 
+11/27/2016 10:32:11 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:12 PM INFO: Mode:increment	Protocol:Ethernet	Config:{0 00:00:00:03:02:01 1 00:00:00:00:00:01} 
+11/27/2016 10:32:12 PM INFO: start:00:00:00:03:02:01 count:1 step:00:00:00:00:00:01 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.sourceAddress-2" 
+11/27/2016 10:32:12 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:12 PM INFO: field:etherType 
+11/27/2016 10:32:12 PM INFO: mesh:0 
+11/27/2016 10:32:12 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:12 PM INFO: value:etherType 
+11/27/2016 10:32:12 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.etherType-3" 
+11/27/2016 10:32:12 PM INFO: Step47 
+11/27/2016 10:32:12 PM INFO: Step48 
+11/27/2016 10:32:12 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:12 PM INFO: field:destinationAddress 
+11/27/2016 10:32:12 PM INFO: mesh:0 
+11/27/2016 10:32:12 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:12 PM INFO: value:destinationAddress 
+11/27/2016 10:32:12 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.destinationAddress-1" 
+11/27/2016 10:32:12 PM INFO: Step47 
+11/27/2016 10:32:12 PM INFO: Step49 
+11/27/2016 10:32:12 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.destinationAddress-1" 
+11/27/2016 10:32:12 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:12 PM INFO: Mode:increment	Protocol:Ethernet	Config:{0 ee:ff:01:00:00:01 1 00:00:00:00:00:01} 
+11/27/2016 10:32:12 PM INFO: start:ee:ff:01:00:00:01 count:1 step:00:00:00:00:00:01 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.destinationAddress-1" 
+11/27/2016 10:32:12 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:12 PM INFO: field:sourceAddress 
+11/27/2016 10:32:12 PM INFO: mesh:0 
+11/27/2016 10:32:12 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:12 PM INFO: value:sourceAddress 
+11/27/2016 10:32:12 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.sourceAddress-2" 
+11/27/2016 10:32:12 PM INFO: Step47 
+11/27/2016 10:32:12 PM INFO: Step49 
+11/27/2016 10:32:12 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.sourceAddress-2" 
+11/27/2016 10:32:12 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:12 PM INFO: Mode:increment	Protocol:Ethernet	Config:{0 aa:bb:00:03:02:01 1 00:00:00:00:00:01} 
+11/27/2016 10:32:12 PM INFO: start:aa:bb:00:03:02:01 count:1 step:00:00:00:00:00:01 obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.sourceAddress-2" 
+11/27/2016 10:32:12 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:12 PM INFO: field:etherType 
+11/27/2016 10:32:12 PM INFO: mesh:0 
+11/27/2016 10:32:12 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:12 PM INFO: value:etherType 
+11/27/2016 10:32:12 PM INFO: ********Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1"/field:"ethernet.header.etherType-3" 
+11/27/2016 10:32:12 PM INFO: Step47 
+11/27/2016 10:32:12 PM INFO: Step48 
+11/27/2016 10:32:12 PM INFO: @@@@@@@@@@5Stack Link list: 
+11/27/2016 10:32:12 PM INFO: Step150 
+11/27/2016 10:32:12 PM INFO: Step190 
+11/27/2016 10:32:12 PM INFO: Step200 
+11/27/2016 10:32:12 PM INFO: Step230 
+11/27/2016 10:32:12 PM INFO: Step240 
+11/27/2016 10:32:12 PM INFO: Step250 
+11/27/2016 10:32:12 PM INFO: Step250 
+11/27/2016 10:32:12 PM INFO: ----- TAG: body VlanHdr::config  ----- 
+11/27/2016 10:32:12 PM INFO: Pro: vlan 
+11/27/2016 10:32:12 PM INFO: type:APP	protocol:vlan 
+11/27/2016 10:32:12 PM INFO: constructor success 
+11/27/2016 10:32:12 PM INFO: ----- TAG: body SingleVlanHdr::config  ----- 
+11/27/2016 10:32:12 PM INFO: Pro: vlan 
+11/27/2016 10:32:12 PM INFO: Step10 
+11/27/2016 10:32:12 PM INFO: fields:vlanID optionals:0 autos:0 meshes:0 
+11/27/2016 10:32:12 PM INFO: fields:vlanID vlanUserPriority optionals:0 0 autos:0 0 meshes:0 0 
+11/27/2016 10:32:12 PM INFO: fields:vlanID vlanUserPriority cfi optionals:0 0 0 autos:0 0 0 meshes:0 0 0 
+11/27/2016 10:32:12 PM INFO: ----- TAG: body Header::config  ----- 
+11/27/2016 10:32:12 PM INFO: Args:-id1 440 -id1_num 1 -id1_step 1 -pri1 1 -pri1_num 1 -cfi1 0 -type1 auto  
+11/27/2016 10:32:12 PM INFO: type:APP 
+11/27/2016 10:32:13 PM INFO: default interface: 
+11/27/2016 10:32:13 PM INFO: default mac: 
+11/27/2016 10:32:13 PM INFO: default ip:1.1.1.1 
+11/27/2016 10:32:13 PM INFO: ----- TAG: body Traffic::config  ----- 
+11/27/2016 10:32:13 PM INFO: Args:-pdu @tester.pdu.vlan(1)  
+11/27/2016 10:32:13 PM INFO: pdu:@tester.pdu.vlan(1) 
+11/27/2016 10:32:13 PM INFO: Step100 
+11/27/2016 10:32:13 PM INFO: Config pdu:@tester.pdu.vlan(1) 
+11/27/2016 10:32:13 PM INFO: pdu:@tester.pdu.vlan(1) 
+11/27/2016 10:32:13 PM INFO: head:@tester.pdu.vlan(1) 
+11/27/2016 10:32:13 PM INFO: GetObject search... 
+11/27/2016 10:32:13 PM INFO: name: @tester.pdu.vlan(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 ::VlanHdr::vlan948904310 
+11/27/2016 10:32:13 PM INFO: head obj:::@tester.pdu.vlan(1) 
+11/27/2016 10:32:13 PM INFO: stack level:1 
+11/27/2016 10:32:13 PM INFO: GetObject search... 
+11/27/2016 10:32:14 PM INFO: name: @tester.pdu.vlan(1), objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 ::VlanHdr::vlan948904310 
+11/27/2016 10:32:14 PM INFO: PDU type: APPLIST  
+11/27/2016 10:32:14 PM INFO: Step10 
+11/27/2016 10:32:14 PM INFO: Pro: Vlan  
+11/27/2016 10:32:14 PM INFO: Step14 
+11/27/2016 10:32:14 PM INFO: PDU type: APPLIST  
+11/27/2016 10:32:14 PM INFO: ----- TAG: body Traffic::GetProtocolTemp  ----- 
+11/27/2016 10:32:14 PM INFO: Get protocol... 
+11/27/2016 10:32:14 PM INFO: protocol to match:Vlan 
+11/27/2016 10:32:14 PM INFO: protocol stack: ::ixNet::OBJ-/traffic/protocolTemplate:"vlan" 
+11/27/2016 10:32:14 PM INFO: Step20 
+11/27/2016 10:32:14 PM INFO: name:::@tester.pdu.vlan(1) 
+11/27/2016 10:32:14 PM INFO: objList:vlan948904310 
+11/27/2016 10:32:14 PM INFO: stream:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1 
+11/27/2016 10:32:14 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-3" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-4" 
+11/27/2016 10:32:14 PM INFO: appendHeader:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" 
+11/27/2016 10:32:14 PM INFO: stack to be added: ::ixNet::OBJ-/traffic/protocolTemplate:"vlan" 
+11/27/2016 10:32:14 PM INFO: stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" 
+11/27/2016 10:32:14 PM INFO: stackLevel:2 
+11/27/2016 10:32:14 PM INFO: Stack:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" 
+11/27/2016 10:32:14 PM INFO: Stack list:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ethernet-1" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-3" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"ipv4-4" ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"fcs-5" 
+11/27/2016 10:32:14 PM INFO: Step43 
+11/27/2016 10:32:14 PM INFO: name:::@tester.pdu.vlan(1) 
+11/27/2016 10:32:14 PM INFO: objList:vlan948904310 
+11/27/2016 10:32:14 PM INFO: single header name: vlan948904310 
+11/27/2016 10:32:14 PM INFO: GetObject search... 
+11/27/2016 10:32:14 PM INFO: name: vlan948904310, objs: ::@tester.pdu.ipv4(1) ::IxiaCapi::PortManager ::@tester_to_dta1 ::@tester_to_dta2 ::@tester.pdu.eth(1) ::@tester_to_dta1.traffic(1) ::@tester.pdu.vlan(1) ::IxiaCapi::TrafficManager ::VlanHdr::vlan944733492 ::VlanHdr::vlan948904310 
+11/27/2016 10:32:14 PM INFO: single header obj: ::VlanHdr::vlan948904310 
+11/27/2016 10:32:14 PM INFO: mode Incrementing Incrementing Fixed field vlanID vlanUserPriority cfi conf {{0 440 1 1}} {{0 1 1 1}} 0 opt 0 0 0 auto 0 0 0 
+11/27/2016 10:32:14 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:14 PM INFO: value:vlanID 
+11/27/2016 10:32:14 PM INFO: Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanID-3" 
+11/27/2016 10:32:14 PM INFO: Step47 
+11/27/2016 10:32:14 PM INFO: Step49 
+11/27/2016 10:32:14 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanID-3" 
+11/27/2016 10:32:14 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:14 PM INFO: Mode:increment	Protocol:Vlan	Config:{0 440 1 1} 
+11/27/2016 10:32:14 PM INFO: start:440 count:1 step:1 mode:increment obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanID-3" 
+11/27/2016 10:32:14 PM INFO: mode Incrementing Incrementing Fixed field vlanID vlanUserPriority cfi conf {{0 440 1 1}} {{0 1 1 1}} 0 opt 0 0 0 auto 0 0 0 
+11/27/2016 10:32:14 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:14 PM INFO: value:vlanUserPriority 
+11/27/2016 10:32:14 PM INFO: Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanUserPriority-1" 
+11/27/2016 10:32:14 PM INFO: Step47 
+11/27/2016 10:32:14 PM INFO: Step49 
+11/27/2016 10:32:14 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanUserPriority-1" 
+11/27/2016 10:32:14 PM INFO: Mode:Incrementing 
+11/27/2016 10:32:14 PM INFO: Mode:increment	Protocol:Vlan	Config:{0 1 1 1} 
+11/27/2016 10:32:14 PM INFO: start:1 count:1 step:1 mode:increment obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.vlanUserPriority-1" 
+11/27/2016 10:32:14 PM INFO: mode Incrementing Incrementing Fixed field vlanID vlanUserPriority cfi conf {{0 440 1 1}} {{0 1 1 1}} 0 opt 0 0 0 auto 0 0 0 
+11/27/2016 10:32:14 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 10:32:14 PM INFO: value:cfi 
+11/27/2016 10:32:14 PM INFO: Field object: ::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.cfi-2" 
+11/27/2016 10:32:14 PM INFO: Step47 
+11/27/2016 10:32:14 PM INFO: Step49 
+11/27/2016 10:32:14 PM INFO: obj:::ixNet::OBJ-/traffic/trafficItem:3/highLevelStream:1/stack:"vlan-2"/field:"vlan.header.vlanTag.cfi-2" 
+11/27/2016 10:32:14 PM INFO: Mode:Fixed 
+11/27/2016 10:32:14 PM INFO: Fixed:Vlan	cfi	0 
+11/27/2016 10:32:14 PM INFO: @@@@@@@@@@5Stack Link list: 
+11/27/2016 10:32:14 PM INFO: ----- TAG: body Traffic::SetStackLink  ----- 
+11/27/2016 10:32:14 PM INFO: @@@@@@@@stackLinkList:, header:vlan, null:null 
+11/27/2016 10:32:14 PM INFO: Step150 
+11/27/2016 10:32:14 PM INFO: Step190 
+11/27/2016 10:32:14 PM INFO: Step200 
+11/27/2016 10:32:14 PM INFO: Step230 
+11/27/2016 10:32:14 PM INFO: Step240 
+11/27/2016 10:32:14 PM INFO: Step250 
+11/27/2016 10:32:14 PM INFO: Step250 
+11/27/2016 11:04:31 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 11:04:31 PM INFO: value:sourceAddress 
+11/27/2016 11:04:50 PM INFO: ----- TAG: body Traffic::GetField  ----- 
+11/27/2016 11:04:50 PM INFO: value:sourceAddress 

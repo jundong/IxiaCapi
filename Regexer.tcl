@@ -486,18 +486,26 @@ Deputs "Invalid ipv4 format"
 		return [ string range $macResult 1 end ]
 	}
 	
-	
-
     proc GetObject { name } {
-        foreach obj [ find objects ] {
-		    if { $name == $obj || $name == "::$obj" } {
-			    return $obj
-			}
-            if { [ regexp $name $obj ] && ![ regexp ${name}. $obj ] && ![ regexp "\[^:\]$name" $obj ] } {
-                return $obj
-            }
-        }
-        return ""
+       Deputs "GetObject search..."
+       set objects [ find objects ]
+       Deputs "name: $name, objs: $objects"
+       if { [ lsearch $objects "::CIxiaNetPortETH::$name" ] != -1 } {
+          set index [ lsearch $objects "::CIxiaNetPortETH::$name" ]
+          return [ lindex $objects $index ]
+       } elseif { [ lsearch $objects "::CIxiaNetPortETH$name" ] != -1 } {
+          set index [ lsearch $objects "::CIxiaNetPortETH$name" ]
+          return [ lindex $objects $index ]
+       }
+       foreach obj $objects {
+          if { $name == $obj || "::$name" == $obj } {
+             return $obj
+          }
+          if { [ regexp $name $obj ] && ![ regexp ${name}. $obj ] && ![ regexp "\[^:\]$name" $obj ] } {
+             return $obj
+          }
+       }
+       return ""
     }
 
     proc GetMacStep { offset val } {
@@ -619,26 +627,273 @@ Deputs "----- TAG: $tag -----"
 	}
 	
 	proc ixConvertBool { value } {
-    set value [ string tolower $value ]
-    if { ( $value == "enable" ) || ( $value == "success" ) || ( $value == "true" )  } {
-        set value "true"
-    }
-    if { ( $value == "disable" ) || ( $value == "fail" ) || ( $value == "false" )  } {
-        set value "false"
-    }
-    if { $value == 1 || $value == 0 } {
-        return $value
-    } else {
-        if { [ info exists [string tolower $value] ] == 0 } {
-            return $value
+        set value [ string tolower $value ]
+        if { ( $value == "enable" ) || ( $value == "success" ) || ( $value == "true" )  } {
+            set value "true"
         }
-        eval { set trans } $[string tolower $value]
-        if { $trans == "true" || $trans == "false" } {
-            return $trans
+        if { ( $value == "disable" ) || ( $value == "fail" ) || ( $value == "false" )  } {
+            set value "false"
+        }
+        if { $value == 1 || $value == 0 } {
+            return $value
         } else {
-            return $value
+            if { [ info exists [string tolower $value] ] == 0 } {
+                return $value
+            }
+            eval { set trans } $[string tolower $value]
+            if { $trans == "true" || $trans == "false" } {
+                return $trans
+            } else {
+                return $value
+            }
         }
     }
-}
 
+    #==================================================
+    # 函数名称:                                                         
+    #    ixCheckParas                                                        
+    # 描述:                                                               
+    #    检查参数是否正确                                   
+    # 参数:                                                          
+    # 语法描述:                                                         
+    #     ixCheckParas {-location 1/3/1 -intf_ip 1.1.1.2 -dut_ip 1.1.1.1 -speed 1G}\
+    #     	{-location -intf_ip -dut_ip} {-speed}                            
+    # 返回值：                                                          
+    #    成功1，失败0；                        
+    #==================================================
+    proc ixCheckParas {args_list man_list opt_list} {
+      set flag 1
+      array set args_array $args_list
+      foreach man $man_list {
+          if {[lsearch [array names args_array] $man]<0} {
+              lappend ::ERRINFO "No mandatory para: $man"
+              set flag 0
+            }
+        }
+    
+      foreach para [array names args_array] {
+        if {[lsearch $man_list $para]<0} {
+              if {[lsearch $opt_list $para]<0} {
+                  lappend ::ERRINFO "Error optional para: $para"
+                  set flag 0
+                }
+          }
+        }
+      return $flag
+    }
+
+    #==================================================
+    # 函数名称:                                                         
+    #    ixNumber2Ipmask                                                        
+    # 描述:                                                               
+    #    将10进制掩码转换为*.*.*.*格式                                   
+    # 参数:                                                          
+    # 语法描述:                                                         
+    #     ixNumber2Ipmask 24                           
+    # 返回值：                                                          
+    #    IP掩码格式；                        
+    #==================================================
+    proc ixNumber2Ipmask {number} {
+        if {[regexp {\d+.\d+.\d+.\d+} $number]} {
+            return $number
+        } else {
+        set maskend [expr (255<<(8-[expr $number%8]))%256]
+        set zero [expr 4-(($number+7)/8)]
+        if {[expr $number%8]!=0} {
+          return [string repeat 255. [expr $number/8]]$maskend[string repeat .0 $zero]
+        } else {
+          return [string repeat 255. [expr [expr $number/8]-1]]255[string repeat .0 $zero]
+        } 
+        }
+    }
+    
+    #==================================================
+    # 函数名称:                                                         
+    #    ixConvertToByteList                                                        
+    # 描述:                                                               
+    #    将任意形式的16进制byte字符串转换为"00 01 02"列表格式                                   
+    # 参数:                                                          
+    # 语法描述:                                                         
+    #     ixConvertToByteList "00-01"                           
+    # 返回值：                                                          
+    #    list列表                        
+    #==================================================
+    proc ixConvertToByteList {args} {
+        set size [string length $args]
+        for {set i 0} {$i < $size} {incr i} {
+            set char [string index $args $i]
+            if {![regexp {[0-9a-fA-F]} $char]} {
+               set args [string replace $args $i $i " "]
+            }
+        }
+        return $args
+    } 
+    
+    proc ixConvertToUDFTableList {args} {
+        set size [string length $args]
+        for {set i 0} {$i < $size} {incr i} {
+            set char [string index $args $i]
+            if {![regexp {[0-9a-fA-F]} $char]} {
+               set args [string replace $args $i $i ""]
+            }
+        }
+        return $args
+    }
+    
+    #==================================================
+    # 函数名称:                                                         
+    #    ixConvertToIxiaMask                                                        
+    # 描述:                                                               
+    #    将Filter掩码转换为Ixia格式的0位生效                                   
+    # 参数:                                                          
+    # 语法描述:                                                         
+    #     ixConvertToIxiaMask "ff ff"                           
+    # 返回值：                                                          
+    #    list列表                        
+    #==================================================  
+    proc ixConvertToIxiaMask {mask} {
+        set mask_len [llength $mask]
+        set mask_dec [ixia::list2Val $mask]
+        set ff_dec [ixia::list2Val [string repeat ff $mask_len]]
+        set mask_bitwise_eor [expr $mask_dec ^ $ff_dec]
+        return [ixia::val2Bytes $mask_bitwise_eor $mask_len]
+    }
+    
+    proc GetStandardReturnHeader {} {
+#    set statFormat "%10s : %10s"    
+#    set ret "[ format $statFormat "Status" "true" ]\n"
+#    set ret "$ret[ format $statFormat "Log" "" ]\n"
+	    set ret "Status:true\nLog:\n"
+        return $ret
+    }
+	
+	
+    proc GetErrorReturnHeader { log } {
+#    set statFormat "%10s : %10s"    
+#    set ret "[ format $statFormat "Status" "false" ]\n"
+#    set ret "$ret[ format $statFormat "Log" "$log" ]\n"
+	    set ret "Status:false\nLog:$log\n"
+        return $ret
+    }
+	
+	proc GetStandardReturnBody { key value } {
+#    set statFormat "%10s : %10s"    
+#    set ret "[ format $statFormat "$key" "$value" ]\n"
+	    set ret "$key:$value\n"
+        return $ret
+    }
+
+    proc HexToMac { mac } {
+       set formatMac ""
+       if {[string length $mac] == 14} {
+          set mac [string range $mac 0 3][string range $mac 5 8][string range $mac 10 13]
+       }
+       for {set i 0} {$i < 12} {incr i 2} {
+          if {$i == 10} {
+             set formatMac $formatMac[string range $mac $i [expr $i+1]]
+          } else {
+             set formatMac $formatMac[string range $mac $i [expr $i+1]]:
+          }
+       }
+       return $formatMac
+    }
+    
+    proc HexToInt { hexList } {
+        set len [llength $hexList]
+        set intVal 0
+        for {set i 0} {$i < $len} {incr i} {
+            set val [expr 0x[lindex $hexList $i] << ([expr $len - 1] - $i) * 8]
+            set intVal [expr $intVal + $val]
+        }
+        return $intVal
+    }
+    
+    proc RandomMacAddr {} {
+        set a [Ran255]
+        set b [Ran255]
+        set c [Ran255]
+        return 00:00:00:$a:$b:$c
+    }
+    
+    proc Ran255 {} {
+        set ran01 [ expr rand() ]
+        set ran255 [ expr $ran01 * 255 ]
+        set ran255Int [ expr round($ran255) ]
+        set ran255Hex [ format %x $ran255Int ]
+        if { [ string length $ran255Hex ] == 1 } {
+            set ran255Hex 0$ran255Hex
+        }
+        return $ran255Hex
+    }
+    
+    proc HexValue {value} {
+        if {[regexp -nocase {^0x} $value]} {
+            return $value
+        } else {
+            return "0x$value"
+        }
+    }
+    
+    proc BinToDec {value} {
+        set binary_vlaue $value
+        binary scan [binary format B* [format %032s $binary_vlaue]] I1 decimal_value
+        return $decimal_value
+    }
+    
+    proc PutsFormatInput { input { isgets 1 } } {
+        puts "<input_para>"
+        foreach cin $input {
+            global $cin
+            if { $isgets } {
+                gets stdin $cin
+            }
+            puts "$cin : [set $cin]"
+        }
+        puts "</input_para>"
+    }
+    
+    proc PutsFormatCp { args } {
+            
+        puts "<cp>"
+        
+        foreach { key val } $args {
+            puts "<$key>"
+            puts "$val"
+            puts "</$key>"
+        }
+        
+        puts "</cp>"
+    }
+    
+    # -- 
+    # Get key value from Huawei defined stats
+    proc GetStatsFromReturn { stats key } {
+        set regStr "\{$key:(\\d+)\}"
+        Deputs "the reg key is: $key"
+        if { [ eval regexp $regStr {$stats} match val ] } {
+            return $val
+        } else {
+            return ""
+        }
+    }
+    
+    proc GetResultFromReturn { stats } {
+        set regStr "\{status:true\}"
+        
+        if { [ eval regexp -nocase $regStr {$stats} ] } {
+            return 1
+        } else {
+            return 0
+        }
+    }
+    
+    proc GetValueFromReturn { retVal key } {
+        set regStr "$key:(.*)\\n"
+        
+        if { [ regexp -nocase $regStr $retVal match val ] } {
+            return [ string trim [ lindex [ split $val "\n" ] 0 ] ]
+        } else {
+            error "No key: $key found"
+        }
+    }
 }

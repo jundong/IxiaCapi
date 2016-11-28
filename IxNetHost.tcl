@@ -107,14 +107,10 @@ Deputs "----- TAG: $tag -----"
                 
     }
     
-    
-    
-    
-    
     body Host::Config { args } {
 
         set tag "body Host::Config [info script]"
-Deputs "----- TAG: $tag -----"
+        Deputs "----- TAG: $tag -----"
         set hPort   -1
 		set UpperLayer ipv4
         set count 1

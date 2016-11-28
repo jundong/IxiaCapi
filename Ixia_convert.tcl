@@ -1,30 +1,5 @@
 
 namespace eval IxiaCapi {
-
-    proc GetStandardReturnHeader {} {
-#    set statFormat "%10s : %10s"    
-#    set ret "[ format $statFormat "Status" "true" ]\n"
-#    set ret "$ret[ format $statFormat "Log" "" ]\n"
-	    set ret "Status:true\nLog:\n"
-        return $ret
-    }
-	
-	
-    proc GetErrorReturnHeader { log } {
-#    set statFormat "%10s : %10s"    
-#    set ret "[ format $statFormat "Status" "false" ]\n"
-#    set ret "$ret[ format $statFormat "Log" "$log" ]\n"
-	    set ret "Status:false\nLog:$log\n"
-        return $ret
-    }
-	
-	proc GetStandardReturnBody { key value } {
-#    set statFormat "%10s : %10s"    
-#    set ret "[ format $statFormat "$key" "$value" ]\n"
-	    set ret "$key:$value\n"
-        return $ret
-    }
-	
 	proc NamespaceConvert { namelist templist } {
 	    set newlist ""
 	    foreach name $namelist {   
